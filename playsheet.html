@@ -1,0 +1,265 @@
+<style>
+body {
+  background-color: black;
+  letter-spacing: -0.05em;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.border {
+  padding: 4px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.thickborder {
+  padding: 1px;
+  box-sizing: border-box;
+  border: 3px solid black;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.fill {
+  flex: 1;
+}
+
+#playsheet {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 693px;
+  width: 340px;
+  padding-top: 24px;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
+#playsheet-header {
+  align-self: start;
+  font-weight: bold;
+}
+
+#top {
+  margin-top: 36px;
+}
+
+#profile-section {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+#profile-icon {
+  width: 134px;
+}
+
+.stat > :first-child {
+  flex: 50%;
+}
+
+.stat > :nth-child(2) {
+  flex: 15%;
+  text-align: center;
+}
+
+.stat > :nth-child(3) {
+  flex: 25%;
+  text-align: right;
+}
+
+#statuses-section {
+  width: 180px;
+  justify-content: flex-end;
+}
+
+#status-box {
+  margin-left: 3px;
+  width: 30px;
+  text-align: center;
+}
+
+#middle {
+  margin-top: 20px;
+}
+
+#save-data {
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+
+#floor {
+  margin-left: 3px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+#floor > div {
+  flex-basis: 100%;
+}
+
+#bottom {
+  margin-top: 16px;
+}
+
+#flags {
+  text-align: center;
+}
+
+</style>
+
+<div id="playsheet" class="column">
+  <div id="playsheet-header">
+    TS Ero Trap Dungeon Playsheet
+  </div>
+  <div id="top" class="row space-between">
+    <div id="profile-section" class="column thickborder">
+      <img id="profile-icon" src="profile.png" />
+      <div class="stat border row">
+        <div>
+          Resistance:
+        </div>
+        <div>
+          1
+        </div>
+        <div>
+          (/500)
+        </div>
+      </div>
+      <div class="stat border row">
+        <div>
+          Pleasure:
+        </div>
+        <div>
+          1
+        </div>
+        <div>
+        </div>
+      </div>
+      <div class="stat border row">
+        <div>
+          Degradation:
+        </div>
+        <div>
+          1
+        </div>
+        <div>
+          (/500)
+        </div>
+      </div>
+    </div>
+    <div id="statuses-section" class="column">
+      <div id="statuses-header">
+        ◼️Status Abnormalities
+      </div>
+      <div id="statuses" class="thickborder">
+        <div class="row space-between">
+          <div class="border fill">Non-virgin</div>
+          <div id="status-box" class="border">x</div>
+        </div>
+        <div class="row space-between">
+          <div class="border fill">In Heat</div>
+          <div id="status-box" class="border">x</div>
+        </div>
+        <div class="row space-between">
+          <div class="border fill">Lewd Crest (Level)</div>
+          <div id="status-box" class="border">x</div>
+        </div>
+        <div class="row space-between">
+          <div class="border fill">Obscene Asshole</div>
+          <div id="status-box" class="border">x</div>
+        </div>
+        <div class="row space-between">
+          <div class="border fill">Producing Milk</div>
+          <div id="status-box" class="border">x</div>
+        </div>
+        <div class="row space-between">
+          <div class="border fill">Cum Addiction</div>
+          <div id="status-box" class="border">x</div>
+        </div>
+        <div class="row space-between">
+          <div class="border fill">Incontinent</div>
+          <div id="status-box" class="border">x</div>
+        </div>
+        <div class="row space-between">
+          <div class="border fill">Sex Toy</div>
+          <div id="status-box" class="border">x</div>
+        </div>
+        <div class="row space-between">
+          <div class="border fill">Parasite (Possessed)</div>
+          <div id="status-box" class="border">x</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="middle" class="row thickborder">
+    <div id="save-data" class="border">Save Data</div>
+    <div id="floor" class="border row space-between fill">
+      <div>Floor</div>
+      <div>1</div>
+      <div>(Page:</div>
+      <div>1</div>
+      <div>/&nbsp;[Section:</div>
+      <div>1</div>
+      <div>])</div>
+    </div>
+  </div>
+  <div id="bottom">
+    <div id="flags-header">
+      ◼️Flag Management
+    </div>
+    <div id="flags">
+      <div class="thickborder row space-between">
+        <div class="fill"><div class="border">A</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">B</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">C</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">D</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">E</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">F</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">G</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">H</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">I</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">J</div><div class="border">x</div></div>
+      </div>
+      <div class="thickborder row space-between">
+        <div class="fill"><div class="border">K</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">L</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">M</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">N</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">O</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">P</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">Q</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">R</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">S</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">T</div><div class="border">x</div></div>
+      </div>
+      <div class="thickborder row space-between">
+        <div class="fill"><div class="border">U</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">V</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">W</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">X</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">Y</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">Z</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">α</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">β</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">γ</div><div class="border">x</div></div>
+        <div class="fill"><div class="border">Ω</div><div class="border">x</div></div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
