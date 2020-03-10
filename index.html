@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<div id="store-area" hidden><tw-storydata name="TS Ero Trap Dungeon" startnode="1" creator="Twine" creator-version="2.3.1" ifid="345F6C61-A571-48B9-90CD-340553E7631C" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage
+	<div id="store-area" hidden><tw-storydata name="TS Ero Trap Dungeon" startnode="1" creator="Twine" creator-version="2.3.1" ifid="345F6C61-A571-48B9-90CD-340553E7631C" zoom="1" format="SugarCube" format-version="2.28.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage
 {
   font-size: 13px;
   line-height: 20px;
@@ -257,7 +257,9 @@ br
 }
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 </script><tw-tag name="open" color="red"></tw-tag>,<tw-tag name="unfinished" color="red"></tw-tag><tw-passagedata pid="1" name="☆彡 Warning!" tags="" position="399,23" size="100,100">
 
 
@@ -798,7 +800,7 @@ Then, you hear a thump, feel an impact, and then you realize. The Demon Lord cut
 Your life ends as you look up at your party’s Priest and Magician at the edge of your vision, their faces eyed with despair. You stare at the Demon Lord with cold eyes as he looks down upon you.
 
 &lt;b&gt;【BAD END 1 / Decapitated】
-→ [[▷Restart?|Prologue]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="35" name="005" tags="" position="182,1678" size="100,100">You gulp and swallow your saliva, then nervously reach your hand toward your crotch.
+→ [[▷Restart?|Prologue]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="35" name="005" tags="" position="182,1677" size="100,100">You gulp and swallow your saliva, then nervously reach your hand toward your crotch.
 &quot;I-I&#39;m just going to check and see... if it&#39;s really gone... That&#39;s all I&#39;m doing...&quot;
 You grope around &quot;down there&quot; as you voice your excuse to yourself.
 &quot;Kuh!? Uuuh... Was I too rough?&quot;
@@ -921,7 +923,7 @@ The statue&#39;s length is pulled out of you, and you&#39;re released. You fall 
 &quot;I-I... won&#39;t lose to the likes of this... I&#39;m the hero, I&#39;m the hero, damnit...&quot;
 You put your clothes back on. As you walk up the stairs behind the now-open door, you&#39;re constantly tormented by the exhaustion of having your body changed, as well as the throbbing of your unclean hole. The magic medicine continues dripping out of your asshole, staining your clothes...
 
-&lt;b&gt;(&lt;u&gt;Climaxes&lt;/&gt; +1. Reset your pleasure.)
+&lt;b&gt;(&lt;u&gt;Climaxes&lt;/u&gt; +1. Reset your pleasure.)
 (Check off the &lt;u&gt;obscene asshole&lt;/u&gt; status.)
 &lt;&lt;set $climax_damage=1, $pleasure=0, $obscene_asshole=1&gt;&gt;
 &lt;&lt;takeClimaxDamage&gt;&gt;
@@ -980,9 +982,10 @@ You become drunk on the pleasure, and before you know it, you&#39;re totally ent
 Having become too absorbed in masturbating, you climax, then collapse to the floor as you moan. However, though you may have climaxed, it was your first time masturbating, so it was rough, meaning you&#39;ve still got a hot flame smoldering inside your belly.
 
 &lt;b&gt;(&lt;u&gt;Climaxes&lt;/u&gt; +1, &lt;u&gt;pleasure&lt;/u&gt; +5, and check off the &lt;u&gt;unsatisfied&lt;/u&gt; status.)
-&lt;&lt;set $climax_damage=1, $pleasure_damage=5, $unsatisfied=1&gt;&gt;
+&lt;&lt;set $climax_damage=1, $pleasure_damage=5&gt;&gt;
 &lt;&lt;takeClimaxDamage&gt;&gt;
 &lt;&lt;takePleasureDamage&gt;&gt;
+&lt;&lt;set $unsatisfied=1&gt;&gt;
 
 → [[▷095|095]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="42" name="150" tags="" position="325,1525" size="100,100">&quot;Uguuh...&quot;
 However, you feel a blow to your body, and you somersault to the ground. The goblins were faster than you expected them to be, and you were unable to dodge their attack.
@@ -1091,6 +1094,10 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
       &lt;/div&gt;
       &lt;div id=&quot;statuses&quot; class=&quot;thickborder&quot;&gt;
         &lt;div class=&quot;row space-between&quot;&gt;
+          &lt;div class=&quot;border fill&quot;&gt;Unsatisfied&lt;/div&gt;
+          &lt;div id=&quot;status-box&quot; class=&quot;border&quot;&gt;&lt;&lt;if $unsatisfied&gt;&gt;x&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row space-between&quot;&gt;
           &lt;div class=&quot;border fill&quot;&gt;Non-virgin&lt;/div&gt;
           &lt;div id=&quot;status-box&quot; class=&quot;border&quot;&gt;&lt;&lt;if $non_virgin&gt;&gt;x&lt;&lt;endif&gt;&gt;&lt;/div&gt;
         &lt;/div&gt;
@@ -1175,7 +1182,7 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;X&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_x&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Y&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_y&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Z&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_z&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;α&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_alpha&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;α&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_alpha&gt;&gt;$flag_alpha&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;β&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_beta&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;γ&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_gamma&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Ω&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_omega&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
@@ -1253,6 +1260,7 @@ hi
 &lt;&lt;set $pleasure=0&gt;&gt;
 &lt;&lt;set $unsatisfied=0&gt;&gt;
 &lt;&lt;/if&gt;&gt;
+&lt;&lt;updateBar&gt;&gt;
 &lt;&lt;/silently&gt;&gt;&lt;&lt;/widget&gt;&gt;
 
 &lt;&lt;widget &quot;takePleasureDamage&quot;&gt;&gt;&lt;&lt;silently&gt;&gt;
@@ -1260,6 +1268,7 @@ hi
 &lt;&lt;if $pleasure&gt;=10&gt;&gt;
 &lt;&lt;set $unsatisfied=1&gt;&gt;
 &lt;&lt;/if&gt;&gt;
+&lt;&lt;updateBar&gt;&gt;
 &lt;&lt;/silently&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="116" tags="" position="270,3174" size="100,100">116
 
 &quot;Making a stop on the way should be fine... right?&quot;
@@ -1273,6 +1282,7 @@ You decide to prioritize getting rid of the displeasure in your lower half, and 
 You exhale, then focus your strength on your lower body, and hear dirty sounds as the murky, white filth is expelled from your body.
 
 &lt;b&gt;(Check off &lt;u&gt;flag D&lt;/u&gt;.)
+&lt;&lt;set $flag_d=1&gt;&gt;&lt;&lt;updateBar&gt;&gt;
 
 1. If you have the &lt;u&gt;obscene asshole&lt;/u&gt; status checked off...
 &lt;&lt;if $tracking==0 or $obscene_asshole==1&gt;&gt;
@@ -1472,8 +1482,8 @@ Believing her words, you nod, but in the next moment, her eyes go back to being 
 &quot;I&#39;m going to free you from the Demon Lord&#39;s brainwashing magic for sure! Wait for me!&quot;
 You vow to the priest and leave the dressing room in your bikini armor.
 
-&lt;b&gt;(Check off &lt;u&gt;flags E and F&lt;/u&gt;. &lt;u&gt;Flag α&lt;/u&gt; +1.)
-&lt;&lt;set $flag_e=1, $flag_f=1, $flag_alpha+=1)
+&lt;b&gt;(Check off &lt;u&gt;flags E and F&lt;/u&gt;. &lt;u&gt;Flag &lt;i&gt;α&lt;/i&gt;&lt;/u&gt; +1.)
+&lt;&lt;set $flag_e=1, $flag_f=1, $flag_alpha+=1&gt;&gt;
 
 → [[▷048|048]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="63" name="068" tags="" position="782,3478" size="100,100">&quot;I&#39;ll go with the heroic b... bikini armor...&quot;
 Upon hearing your answer, the succubi give you a lewd smile.
