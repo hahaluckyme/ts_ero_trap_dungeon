@@ -178,27 +178,31 @@ br
 }
 
 #playsheet {
-  letter-spacing: -0.05em;
   font-size: 14px;
   background-color: black;
   display: flex;
   flex-direction: column;
   width: 340px;
   color: white;
+  text-align: left;
+  font-family: serif;
 }
 
 #profile-section {
   flex: 0 0 40%;
   display: flex;
   flex-direction: column;
+  width: 160px;
 }
 
 #profile-icon {
-  width: 134px;
+  justify-self: flex-start;
+  width: 100%;
 }
 
 .stat > :first-child {
   flex: 50%;
+  width: 100px;
 }
 
 .stat > :nth-child(2) {
@@ -212,7 +216,7 @@ br
 }
 
 #statuses-section {
-  width: 180px;
+  width: 170px;
   justify-content: flex-end;
 }
 
@@ -268,7 +272,8 @@ br
 Writing: Mizuki Nanase
 Cover: Souzuki Naru
 
-[[Continue|Setup]]</tw-passagedata><tw-passagedata pid="2" name="TS Ero Trap Dungeon" tags="" position="400,325" size="100,100">
+[[Continue|TS Ero Trap Dungeon][$tracking to 1]]
+</tw-passagedata><tw-passagedata pid="2" name="TS Ero Trap Dungeon" tags="" position="400,325" size="100,100">
 
 
 From here on you, you will have to face dangers as a &quot;lone hero.&quot;
@@ -1043,21 +1048,21 @@ You watch the troops leave on their journey, turned on from imagining them rough
 One year later, the goblins overpower the Demon Lord through their sheer numbers and defeat him, and before long at all, they&#39;ve conquered the entire continent. You&#39;ve gone from being the princess of the goblins to ruling over the continent as the &quot;Demon Lady&quot; who oversees the age of chaos.
 
 &lt;b&gt;【BAD END 3 / From a seedbed princess to the Demon Lady who oversees the age of chaos.】
-→ [[▷Restart?|Prologue]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="44" name="PassageHeader" tags="" position="82,98" size="100,100">&lt;h1&gt;&lt;&lt;print passage()&gt;&gt;&lt;/h1&gt;&lt;br&gt;</tw-passagedata><tw-passagedata pid="45" name="Setup" tags="" position="400,162" size="100,100">This game uses stats and flags to determine which choices are open to you. You can either choose to have these tracked automatically, which will result in you only being able to pick options that you should be able to pick, or you can choose to track them in the stat sheet yourself, which will allow you to play based on a self-moderated honor system.
+→ [[▷Restart?|Prologue]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="44" name="PassageHeader" tags="" position="82,98" size="100,100">&lt;h1&gt;&lt;&lt;print passage()&gt;&gt;&lt;/h1&gt;&lt;br&gt;</tw-passagedata><tw-passagedata pid="45" name="Setup" tags="" position="579,162" size="100,100">This game uses stats and flags to determine which choices are open to you. You can either choose to have these tracked automatically, which will result in you only being able to pick options that you should be able to pick, or you can choose to track them in the stat sheet yourself, which will allow you to play based on a self-moderated honor system.
 
 → [[Automatic|TS Ero Trap Dungeon][$tracking to 1]]
 → [[Manual|TS Ero Trap Dungeon][$tracking to 0]]
-</tw-passagedata><tw-passagedata pid="46" name="StoryCaption" tags="nobr" position="84,271" size="100,100">&lt;div id=&quot;playsheet&quot; class=&quot;column&quot;&gt;
+</tw-passagedata><tw-passagedata pid="46" name="StoryCaption" tags="nobr" position="84,270" size="100,100">&lt;div id=&quot;playsheet&quot; class=&quot;column&quot;&gt;
   &lt;div id=&quot;top&quot; class=&quot;row space-between&quot;&gt;
     &lt;div id=&quot;profile-section&quot; class=&quot;column thickborder&quot;&gt;
       &lt;img id=&quot;profile-icon&quot; src=&quot;profile.png&quot; /&gt;
+	  &lt;div class=&quot;fill&quot;&gt;
+	  &lt;/div&gt;
       &lt;div class=&quot;stat border row&quot;&gt;
         &lt;div&gt;
           Resistance:
         &lt;/div&gt;
-        &lt;div contenteditable=&quot;true&quot;&gt;
-          0
-        &lt;/div&gt;
+		&lt;div&gt;$resistance&lt;/div&gt;
         &lt;div&gt;
           (/500)
         &lt;/div&gt;
@@ -1066,9 +1071,7 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
         &lt;div&gt;
           Pleasure:
         &lt;/div&gt;
-        &lt;div contenteditable=&quot;true&quot;&gt;
-          0
-        &lt;/div&gt;
+		&lt;div&gt;$pleasure&lt;/div&gt;
         &lt;div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -1076,11 +1079,9 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
         &lt;div&gt;
           Degradation:
         &lt;/div&gt;
-        &lt;div contenteditable=&quot;true&quot;&gt;
-          0
-        &lt;/div&gt;
+		&lt;div&gt;$degradation&lt;/div&gt;
         &lt;div&gt;
-          (/500)
+          (/100)
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -1091,39 +1092,39 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
       &lt;div id=&quot;statuses&quot; class=&quot;thickborder&quot;&gt;
         &lt;div class=&quot;row space-between&quot;&gt;
           &lt;div class=&quot;border fill&quot;&gt;Non-virgin&lt;/div&gt;
-          &lt;div id=&quot;status-box&quot; class=&quot;border&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;
+          &lt;div id=&quot;status-box&quot; class=&quot;border&quot;&gt;&lt;&lt;if $non_virgin&gt;&gt;x&lt;&lt;endif&gt;&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;row space-between&quot;&gt;
           &lt;div class=&quot;border fill&quot;&gt;In Heat&lt;/div&gt;
-          &lt;div id=&quot;status-box&quot; class=&quot;border&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;
+          &lt;div id=&quot;status-box&quot; class=&quot;border&quot;&gt;&lt;&lt;if $in_heat&gt;&gt;x&lt;&lt;endif&gt;&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;row space-between&quot;&gt;
           &lt;div class=&quot;border fill&quot;&gt;Lewd Crest (Level)&lt;/div&gt;
-          &lt;div id=&quot;status-box&quot; class=&quot;border&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;
+          &lt;div id=&quot;status-box&quot; class=&quot;border&quot;&gt;&lt;&lt;if $lewd_crest gt 0&gt;&gt;$lewd_crest&lt;&lt;endif&gt;&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;row space-between&quot;&gt;
           &lt;div class=&quot;border fill&quot;&gt;Obscene Asshole&lt;/div&gt;
-          &lt;div id=&quot;status-box&quot; class=&quot;border&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;
+          &lt;div id=&quot;status-box&quot; class=&quot;border&quot;&gt;&lt;&lt;if $obscene_asshole&gt;&gt;x&lt;&lt;endif&gt;&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;row space-between&quot;&gt;
           &lt;div class=&quot;border fill&quot;&gt;Producing Milk&lt;/div&gt;
-          &lt;div id=&quot;status-box&quot; class=&quot;border&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;
+          &lt;div id=&quot;status-box&quot; class=&quot;border&quot;&gt;&lt;&lt;if $producing_milk&gt;&gt;x&lt;&lt;endif&gt;&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;row space-between&quot;&gt;
           &lt;div class=&quot;border fill&quot;&gt;Cum Addiction&lt;/div&gt;
-          &lt;div id=&quot;status-box&quot; class=&quot;border&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;
+          &lt;div id=&quot;status-box&quot; class=&quot;border&quot;&gt;&lt;&lt;if $cum_addiction&gt;&gt;x&lt;&lt;endif&gt;&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;row space-between&quot;&gt;
           &lt;div class=&quot;border fill&quot;&gt;Incontinent&lt;/div&gt;
-          &lt;div id=&quot;status-box&quot; class=&quot;border&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;
+          &lt;div id=&quot;status-box&quot; class=&quot;border&quot;&gt;&lt;&lt;if $incontinent&gt;&gt;x&lt;&lt;endif&gt;&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;row space-between&quot;&gt;
           &lt;div class=&quot;border fill&quot;&gt;Sex Toy&lt;/div&gt;
-          &lt;div id=&quot;status-box&quot; class=&quot;border&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;
+          &lt;div id=&quot;status-box&quot; class=&quot;border&quot;&gt;&lt;&lt;if $sex_toy&gt;&gt;x&lt;&lt;endif&gt;&gt;&lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;row space-between&quot;&gt;
           &lt;div class=&quot;border fill&quot;&gt;Parasite (Possessed)&lt;/div&gt;
-          &lt;div id=&quot;status-box&quot; class=&quot;border&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;
+          &lt;div id=&quot;status-box&quot; class=&quot;border&quot;&gt;&lt;&lt;if $parasite&gt;&gt;x&lt;&lt;endif&gt;&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -1132,9 +1133,9 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
     &lt;div id=&quot;save-data&quot; class=&quot;border&quot;&gt;Save Data&lt;/div&gt;
     &lt;div id=&quot;floor&quot; class=&quot;border row space-between fill&quot;&gt;
       &lt;div&gt;Floor&lt;/div&gt;
-      &lt;div contenteditable=&quot;true&quot;&gt;0&lt;/div&gt;
+      &lt;div contenteditable=&quot;true&quot;&gt;$floor&lt;/div&gt;
       &lt;div&gt;/&amp;nbsp;[Section:&lt;/div&gt;
-      &lt;div contenteditable=&quot;true&quot;&gt;0&lt;/div&gt;
+      &lt;div contenteditable=&quot;true&quot;&gt;&lt;&lt;print parseInt(passage())&gt;&gt;&lt;/div&gt;
       &lt;div&gt;]&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -1144,42 +1145,42 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
     &lt;/div&gt;
     &lt;div id=&quot;flags&quot;&gt;
       &lt;div class=&quot;thickborder row space-between&quot;&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;A&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;B&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;C&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;D&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;E&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;F&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;G&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;H&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;I&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;J&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;A&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_a&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;B&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_b&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;C&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_c&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;D&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_d&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;E&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_e&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;F&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_f&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;G&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_g&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;H&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_h&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;I&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_i&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;J&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_j&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;thickborder row space-between&quot;&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;K&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;L&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;M&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;N&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;O&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;P&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Q&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;R&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;S&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;T&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;K&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_k&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;L&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_l&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;M&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_m&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;N&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_n&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;O&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_o&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;P&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_p&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Q&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_q&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;R&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_r&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;S&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_s&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;T&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_t&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;thickborder row space-between&quot;&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;U&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;V&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;W&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;X&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Y&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Z&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;α&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;β&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;γ&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Ω&lt;/div&gt;&lt;div class=&quot;border space&quot; contenteditable=&quot;true&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;U&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_u&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;V&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_v&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;W&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_w&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;X&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_x&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Y&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_y&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Z&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_z&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;α&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_alpha&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;β&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_beta&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;γ&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_gamma&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Ω&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_omega&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
       &lt;/div&gt;
-    &lt;/div&gt;
+	&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="47" name="StoryInit" tags="" position="226,97" size="100,100">&lt;&lt;set $tracking=1&gt;&gt;
@@ -1233,8 +1234,11 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
 &lt;&lt;set $flag_alpha=0&gt;&gt;
 &lt;&lt;set $flag_beta=0&gt;&gt;
 &lt;&lt;set $flag_gamma=0&gt;&gt;
-&lt;&lt;set $flag_omega=0&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="Widgets" tags="widget" position="232,270" size="100,100">&lt;&lt;widget &quot;updateBar&quot;&gt;&gt;&lt;&lt;silently&gt;&gt;
+&lt;&lt;set $flag_omega=0&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="Widgets" tags="widget" position="247,270" size="100,100">&lt;&lt;widget &quot;updateBar&quot;&gt;&gt;&lt;&lt;silently&gt;&gt;
+&lt;&lt;if $tracking&gt;&gt;
 &lt;&lt;replace &quot;#story-caption&quot;&gt;&gt;&lt;&lt;display &quot;StoryCaption&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;
+hi
+&lt;&lt;endif&gt;&gt;
 &lt;&lt;/silently&gt;&gt;&lt;&lt;/widget&gt;&gt;
 
 &lt;&lt;widget &quot;takeClimaxDamage&quot;&gt;&gt;&lt;&lt;silently&gt;&gt;
