@@ -269,20 +269,21 @@ importScripts("https://www.googletagmanager.com/gtag/js?id=UA-160315117-1")
         gtag('js', new Date());
         gtag('config', 'UA-160315117-1');
         LoadScreen.unlock(lockID);  // Unlock loading screen
+
+
+				$(document).on('click', 'a', function (ev) {
+					// Get the destination of the clicked link var passage 
+					var passage = $(this).attr('data-passage');
+					// Send the message to google analytics
+					gtag('event', 'Navigation', {
+							event_label    : passage,
+							event_category : 'GuestClick'
+					});
+				});
     }).catch(function(error) {
         LoadScreen.unlock(lockID);  // Unlock loading screen
     }
 );
-
-$(document).on('click', 'a', function (ev) {
-  // Get the destination of the clicked link var passage 
-  var passage = $(this).attr('data-passage');
-  // Send the message to google analytics
-  gtag('event', 'Navigation', {
-      event_label    : passage,
-      event_category : 'GuestClick'
-  });
-});
 </script><tw-tag name="open" color="red"></tw-tag>,<tw-tag name="unfinished" color="red"></tw-tag><tw-passagedata pid="1" name="☆彡 Warning!" tags="" position="399,23" size="100,100">
 
 * This is a work based on the niche genre known as transsexual fiction, or &quot;gender bender&quot; fiction. Please be careful if you dislike that.
