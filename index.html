@@ -266,6 +266,9 @@ br
 #compendium td:nth-child(2) {
   width: 100%;
 }
+
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">var lockID = LoadScreen.lock();  // Lock loading screen
 importScripts("https://www.googletagmanager.com/gtag/js?id=UA-160315117-1")
     .then(function() {
@@ -290,6 +293,9 @@ importScripts("https://www.googletagmanager.com/gtag/js?id=UA-160315117-1")
         LoadScreen.unlock(lockID);  // Unlock loading screen
     }
 );
+
+
+
 
 </script><tw-tag name="dev" color="blue"></tw-tag>,<tw-tag name="open" color="red"></tw-tag>,<tw-tag name="unfinished" color="red"></tw-tag><tw-passagedata pid="1" name="☆彡 Warning!" tags="" position="399,23" size="100,100">
 
@@ -467,7 +473,7 @@ You gaze into the hand mirror given to you by the Demon Lord and look at your fe
 &quot;I’m kind of... cuter than I thought I was?&quot;
 You spent all of your time battling as a Hero, As a result, you’re not very used to girls.
 
-&lt;b&gt;→ [[▷105|105]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="11" name="090" tags="" position="325,1375" size="100,100">&quot;In order to protect myself, I&#39;ve got no choice but to just deal with it. This is the Demon Lord&#39;s castle, after all. Throwing away my defenses would be absurd!&quot;
+&lt;b&gt;→ [[▷105|105]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="11" name="090" tags="" position="325,1374" size="100,100">&quot;In order to protect myself, I&#39;ve got no choice but to just deal with it. This is the Demon Lord&#39;s castle, after all. Throwing away my defenses would be absurd!&quot;
 You keep your armor on, check to make sure your item bag isn&#39;t ripped, then head into the labyrinth.
 Thunk... Thunk...
 Metallic sounds echo throughout the labyrinth.
@@ -674,7 +680,7 @@ Indeed, it appears that all of the liquid that oozed through the walls belonged 
 You cast offensive magic at the slime as it approaches you, but it’s ineffective, and it continues its advance.
 &quot;Damnit! Why... Is it too weak!? In that case...&quot;
 Feeling that the spell was too weak, you decide to use the strongest one you have.
-&quot;Shine Flare!&quot;
+&quot;《Shine Flare》!&quot;
 A torrent of magic shoots forth along with a blinding flash of light, advancing toward the extra-large slime - and then, the magic disappears as if it didn’t even exist to begin with.
 &quot;What... How...&quot;
 You’re stunned as your best spell proves ineffective. The slime suddenly grows larger.
@@ -975,14 +981,19 @@ You look at the third doors and think, and then reach your hand out to the one y
 
 1. Open the door that says &quot;Bathroom.&quot;
 &lt;&lt;if $tracking==0 or $flag_d==0&gt;&gt;
-→ [[▷116|116]]
+→ &lt;&lt;link &quot;▷116&quot; &quot;116&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;else&gt;&gt;
 → ▷116
 &lt;&lt;/if&gt;&gt;
 2. Open the door that says &quot;Dressing Room.&quot;
-→ [[▷025|025]]
+→ &lt;&lt;link &quot;▷025&quot; &quot;025&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
 3. Open the door that says &quot;Labyrinth 2nd Floor.&quot;
-→ [[▷082|082]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="41" name="137" tags="" position="200,1825" size="100,100">You gently stretch your hand out to your crotch again and check around &quot;down there.&quot;
+→ &lt;&lt;link &quot;▷082&quot; &quot;082&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[116]]
+[[025]]
+[[082]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="137" tags="" position="200,1825" size="100,100">You gently stretch your hand out to your crotch again and check around &quot;down there.&quot;
 &quot;It really is gone... This is so weird... So what&#39;s... it like down there...?&quot;
 Just from feeling around, you&#39;re able to tell that your symbol of manhood isn&#39;t there. So with that being gone, does that mean you&#39;ve got female organs &quot;down there&quot; now?
 &quot;I guess I should check directly after all, right? Yeah, I definitely should. It&#39;s important to keep track of my status. Right, this is necessary.&quot;
@@ -1187,7 +1198,7 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;F&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_f&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;G&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_g&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;H&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_h&gt;&gt;$flag_h&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;I&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_i&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;I&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_i&gt;&gt;$flag_i&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;J&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_j&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
       &lt;/div&gt;
       &lt;div class=&quot;thickborder row space-between&quot;&gt;
@@ -1210,7 +1221,7 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Y&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_y&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Z&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_z&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;α&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_alpha&gt;&gt;$flag_alpha&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
-        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;β&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_beta&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;β&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_beta&gt;&gt;$flag_beta&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;γ&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_gamma&gt;&gt;x&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
         &lt;div class=&quot;fill&quot;&gt;&lt;div class=&quot;border&quot;&gt;Ω&lt;/div&gt;&lt;div class=&quot;border space&quot;&gt;&lt;&lt;if $flag_omega&gt;&gt;$flag_omega&lt;&lt;else&gt;&gt;&amp;nbsp;&lt;&lt;endif&gt;&gt;&lt;/div&gt;&lt;/div&gt;
       &lt;/div&gt;
@@ -1294,6 +1305,18 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
 &lt;&lt;if $pleasure&gt;=10&gt;&gt;
 &lt;&lt;set $unsatisfied=1&gt;&gt;
 &lt;&lt;/if&gt;&gt;
+&lt;&lt;/silently&gt;&gt;&lt;&lt;/widget&gt;&gt;
+
+&lt;&lt;widget &quot;choiceCheck&quot;&gt;&gt;&lt;&lt;silently&gt;&gt;
+&lt;&lt;if $sex_toy==1&gt;&gt;
+&lt;&lt;set $pleasure_damage+=1&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $parasite==1&gt;&gt;
+&lt;&lt;set $pleasure_damage+=3&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $pleasure_damage&gt;=1&gt;&gt;
+&lt;&lt;takePleasureDamage&gt;&gt;
+&lt;&lt;/if&gt;&gt;
 &lt;&lt;/silently&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="116" tags="" position="270,3174" size="100,100">&quot;Making a stop on the way should be fine... right?&quot;
 Unable to deal with the throbbing in your lower half, as well as the discomfort caused by the Demon Lord statue&#39;s murky, white liquid dripping down your thighs, you open the door marked &quot;Bathroom.&quot;
 The small bathroom is like one you&#39;d seen in a high-class inn, and has a new model magic toilet in the middle of it.
@@ -1319,7 +1342,7 @@ You exhale, then focus your strength on your lower body, and hear dirty sounds a
 &lt;&lt;else&gt;&gt;
 → ▷113
 &lt;&lt;/if&gt;&gt;
-&lt;/b&gt;</tw-passagedata><tw-passagedata pid="50" name="025" tags="" position="420,3174" size="100,100">You open the door labeled &quot;dressing room.&quot;
+&lt;/b&gt;</tw-passagedata><tw-passagedata pid="50" name="025" tags="" position="422,3180" size="100,100">You open the door labeled &quot;dressing room.&quot;
 &quot;Welcome!&quot;
 The moment you open it, you hear a girl&#39;s voice from inside.
 &quot;...Huh...?&quot;
@@ -1337,12 +1360,19 @@ You&#39;re surprised when you see the girl who called out to you.
 → [[▷015|015]]
 &lt;&lt;else&gt;&gt;
 → ▷015
-&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="51" name="082" tags="" position="416,3784" size="100,100">You open the door with the plate reading &quot;Labyrinth 2nd Floor&quot; on it.
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[145]]
+[[015]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="082" tags="" position="416,3784" size="100,100">You open the door with the plate reading &quot;Labyrinth 2nd Floor&quot; on it.
 On the other side is a natural cave.
 You take a deep breath and step through into the second floor.
 
 &lt;b&gt;⚫ Consult &lt;u&gt;flags D and F&lt;/u&gt;.
-&lt;&lt;set $in_heat=0, $floor=2&gt;&gt;
+&lt;&lt;if $flag_g==0&gt;&gt;
+&lt;&lt;set $in_heat=0&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;set $floor=2&gt;&gt;
 
 1. If neither flag is checked off...
 &lt;&lt;if $tracking==0 or ($flag_d==0 and $flag_f==0)&gt;&gt;
@@ -1384,11 +1414,14 @@ Considering how strangely well-equipped the labyrinth seems to be so far, it&#39
 You&#39;d like to clean off and feel better, but this is a labyrinth created by the Demon Lord. It could be a trap.
 You look at the &quot;clean&quot; button and...
 
-&lt;b&gt;
-1. Give it a press.
-→ [[▷089|089]]
+&lt;b&gt;1. Give it a press.
+→ &lt;&lt;link &quot;▷089&quot; &quot;089&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
 2. Don&#39;t press it.
-→ [[▷092|092]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="54" name="053" tags="" position="196,3474" size="100,100">&quot;Haah... Haah... I didn&#39;t know it felt this good for girls to use the bathroom...&quot;
+→ &lt;&lt;link &quot;▷092&quot; &quot;092&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[089]]
+[[092]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="053" tags="" position="196,3474" size="100,100">&quot;Haah... Haah... I didn&#39;t know it felt this good for girls to use the bathroom...&quot;
 You mutter to yourself with an expression of ecstasy on your face, your breathing rough from experiencing multiple climaxes in a rough.
 (No! I can&#39;t afford to feel good... I can&#39;t... But...)
 You deny it within your heart, but your body is unable to lie. It&#39;s throbbing and saying &quot;I want to feel good from using this bathroom again&quot;...
@@ -1411,13 +1444,13 @@ You were forced to climax multiple from the Demon Lord&#39;s trap, the &quot;Nig
 &lt;&lt;set $in_heat=1, $climax_damage=3&gt;&gt;
 &lt;&lt;takeClimaxDamage&gt;&gt;
 
-→ [[▷053|053]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="56" name="092" tags="" position="420,3474" size="100,100">You decided not to push the &quot;clean&quot; button.
+→ [[▷053|053]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="56" name="092" tags="" position="420,3471" size="100,100">You decided not to push the &quot;clean&quot; button.
 &quot;No matter how familiar things may look, this is the Demon Lord&#39;s labyrinth. It&#39;s definitely a trap.&quot;
 You grimace as the unpleasant feeling remaining in your lower half, but with nothing to do about it, you decide to not think about it.
 &quot;I&#39;ll just consider it good that I got out what I got out,&quot; you convince yourself. You adjust your clothes and then decide to leave the bathroom.
 
 &lt;b&gt;
-→ [[▷048|048]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="57" name="048" tags="" position="420,3623" size="100,100">You return to the second floor&#39;s entrance.
+→ [[▷048|048]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="57" name="048" tags="" position="409,3622" size="100,100">You return to the second floor&#39;s entrance.
 The three doors are labeled &quot;Labyrinth 2nd Floor,&quot; &quot;Bathroom,&quot; and &quot;Dressing Room.&quot;
 You choose a door and reach your hand out to it... You...
 
@@ -1425,14 +1458,19 @@ You choose a door and reach your hand out to it... You...
 
 1. Open the door that says &quot;Bathroom.&quot;
 &lt;&lt;if $tracking==0 or $flag_d==0&gt;&gt;
-→ [[▷116|116]]
+→ &lt;&lt;link &quot;▷116&quot; &quot;116&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;else&gt;&gt;
 → ▷116
 &lt;&lt;/if&gt;&gt;
 2. Open the door that says &quot;Dressing Room.&quot;
-→ [[▷025|025]]
+→ &lt;&lt;link &quot;▷025&quot; &quot;025&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
 3. Open the door that says &quot;Labyrinth 2nd Floor.&quot;
-→ [[▷082|082]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="58" name="145" tags="" position="465,3324" size="100,100">The girl who welcomed you is a scantily-clad succubus with small, black wings and a devil tail, but you&#39;ve seen her face before. More than that, in fact.
+→ &lt;&lt;link &quot;▷082&quot; &quot;082&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[116]]
+[[025]]
+[[082]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="145" tags="" position="465,3324" size="100,100">The girl who welcomed you is a scantily-clad succubus with small, black wings and a devil tail, but you&#39;ve seen her face before. More than that, in fact.
 &quot;Priest... Is that you?&quot;
 You call out to the succubus that resembles the Priest, and she smiles back at you with empty eyes.
 &quot;Ehehe, who did you &lt;i&gt;think&lt;/i&gt; I was? Of course it&#39;s the me you know. ♥&quot;
@@ -1490,13 +1528,17 @@ Both sets are obscene, and any pure girl would want to avoid wearing them withou
 The two succubi approach you while practically shoving the outfits in your face.
 You answer the succubi.
 
-&lt;b&gt;
-1. &quot;I&#39;ll go with the heroic b... bikini armor...&quot;
-→ [[▷068|068]]
+&lt;b&gt;1. &quot;I&#39;ll go with the heroic b... bikini armor...&quot;
+→ &lt;&lt;link &quot;▷068&quot; &quot;068&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
 2. &quot;It looks easy to move around in, so I guess I&#39;ll go with the bunny suit?&quot;
-→ [[▷146|146]]
+→ &lt;&lt;link &quot;▷146&quot; &quot;146&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
 3. &quot;I&#39;ve got absolutely no intentions of wearing such a lewd outfit!&quot;
-→ [[▷056|056]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="60" name="183" tags="" position="541,3474" size="100,100">The Priest runs her hands along your abdomen, then notices the lewd crest carved into it.
+→ &lt;&lt;link &quot;▷056&quot; &quot;056&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[068]]
+[[146]]
+[[056]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="183" tags="" position="541,3474" size="100,100">The Priest runs her hands along your abdomen, then notices the lewd crest carved into it.
 &quot;Did the Demon Lord already carve one into you? I was planning on doing it for you, too... But, oh well. You already had one, so I&#39;ll make your lewd crest stronger for you, okay? ♥&quot;
 The Priest sends magical energy into your crest, making it transform into a much larger and ominous one.
 
@@ -1543,8 +1585,7 @@ You leave the dressing room, still unable to hide your excitement at your bikini
 &lt;&lt;set $pleasure_damage=3, $flag_f=1&gt;&gt;
 &lt;&lt;takePleasureDamage&gt;&gt;
 
-→ [[▷048|048]]&lt;/b&gt;
-</tw-passagedata><tw-passagedata pid="64" name="146" tags="" position="907,3476" size="100,100">&quot;It looks easy to move around in, so I guess I&#39;ll go with the bunny suit?&quot;
+→ [[▷048|048]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="64" name="146" tags="" position="907,3476" size="100,100">&quot;It looks easy to move around in, so I guess I&#39;ll go with the bunny suit?&quot;
 Upon hearing your answer, the succubi give you a lewd smile.
 &quot;Did you know? Rabbits are in heat all year round!&quot;
 &quot;If you put this on, you&#39;ll be in heat all the time, too! Great, right? Yay!&quot;
@@ -1695,19 +1736,27 @@ The path on the left seems a little dark, but otherwise looks like a totally nor
 You...
 
 &lt;b&gt;1. Choose the right path.
-→ [[▷002|002]]
+→ &lt;&lt;link &quot;▷002&quot; &quot;002&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
 2. Choose the left path.
-→ [[▷149|149]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="70" name="Flag Reference" tags="dev" position="85,419" size="100,100">Flag A: Gained from remembering the Priest. Influences the event in the dressing room.
+→ &lt;&lt;link &quot;▷149&quot; &quot;149&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[002]]
+[[149]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="70" name="Flag Reference" tags="dev" position="85,419" size="100,100">Flag A: Gained from remembering the Priest. Influences the event in the dressing room.
 Flag B: Gained from remembering the Magician.
 Flag C: Gained from remembering the Knight.
 Flag D: Gained from either swallowing the Demon Lord statue&#39;s semen or using the toilet after having it ejaculate inside you. You get assualted by Dungeon Cleaners on floor 2 if it isn&#39;t checked.
 Flag E: Gained after meeting the Priest in the dressing room.
 Flag F: Gained from putting on the bikini armor in the dressing room, or having the Priest put it on you in there. You get assaulted by Dungeon Cleaners on floor 2 if it isn&#39;t checked. Partially protects you from the aphrodisiac squirting trap in the dark cave found by going left at the start of floor 2.
-Flag G: Gained from putting on the bunny suit in the dressing room.
-Flag H: +1 from walking into the aphrodisiac mist by going right at the start of floor 2.
+Flag G: Gained from putting on the bunny suit in the dressing room. Checked when falling down a pit in the dark path on floor 3, and cleared if it&#39;s checked.
+Flag H: +1 from walking into the aphrodisiac mist by going right at the start of floor 2. Checked when going down the right path on floor 3.
+Flag I: Number of torches held. Checked when buying the torch set at the floor 3 shop in order to stop you from buying more.
+Flag J: Gained from putting on the Magician&#39;s charm in the floor 3 shop and learning of her identity. Checked when entering the floor 3 shop and when passing out in the left path on floor 3.
+Flag K: Marks whether or not you currently have a key. Obtained from the goblins on floor 3 and used at the door in the floor 3 altar room.
 
 Flag α: +1 from meeting the Priest in the dressing room.
-Flag Ω: +1 from masturbating to fill the chalice at the floor 2 altar.</tw-passagedata><tw-passagedata pid="71" name="002" tags="" position="343,4066" size="100,100">You pick the rigth path with the faint, blue mist coming from it.
+Flag Ω: +1 from masturbating to fill the chalice at the floor 2 altar.
+Flag β: +1 from putting on the Magician&#39;s charm in the floor 3 shop. +1 from having the Magician eat you out.</tw-passagedata><tw-passagedata pid="71" name="002" tags="" position="343,4066" size="100,100">You pick the rigth path with the faint, blue mist coming from it.
 &quot;Haah... Haah... What &lt;i&gt;is&lt;/i&gt; this mist? It&#39;s getting kind of hard... to breathe...&quot;
 As you continue down the path, the mist thickens. It becomes harder and harder for you to breathe, and your body temperature rises.
 (Is this mist poisonous? My body&#39;s getting hot... I feel a throbbing in my abdomen, too... Huh? Wait, don&#39;t tell me this is an aphrodisiac!?)
@@ -1717,7 +1766,7 @@ You continue forward while breathing in the blue aphrodisiac mist, climaxing rep
 
 &lt;b&gt;(Add +1 to &lt;u&gt;flag H&lt;/u&gt;.)
 &lt;&lt;set $flag_h+=1, $random_number=random(0,9)&gt;&gt;
-⚫A random number between 0-9 has been rolled for you that will influence the outcome of this page. Your number is $random_number.
+⚫A random number between 0-9 has been rolled for you that will influence this page&#39;s outcome. Your number is $random_number.
 (&lt;u&gt;Climaxes&lt;/u&gt; +$random_number. &lt;u&gt;Unsatisfied&lt;/u&gt;.)
 &lt;&lt;set $climax_damage=$random_number&gt;&gt;
 &lt;&lt;takeClimaxDamage&gt;&gt;
@@ -1787,10 +1836,15 @@ You glare daggers at the grail held by the statue.
 After struggling to decide for a bit, you come to a conclusion.
 You...
 
+&lt;&lt;choiceCheck&gt;&gt;
 &lt;b&gt;1. Strengthen your will and offer up your holy water (urine).
-→ [[▷035|035]]
+→ &lt;&lt;link &quot;▷035&quot; &quot;035&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
 2. Destroy the nude statue of the Demon Lord.
-→ [[▷038|038]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="76" name="023" tags="" position="497,4208" size="100,100">&quot;...What was that just now? Huh, the crotch of my armor&#39;s kind of wet.&quot;
+→ &lt;&lt;link &quot;▷038&quot; &quot;038&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[035]]
+[[038]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="76" name="023" tags="" position="497,4208" size="100,100">&quot;...What was that just now? Huh, the crotch of my armor&#39;s kind of wet.&quot;
 You touch the crotch plate of your bikini armor and find a pink liquid stuck to it. It appears that there are a bunch of switches on the floor that trigger aphrodisiac-shooting traps.
 &quot;I don&#39;t really understand, but I guess it might have seeped through if I&#39;d been wearing cloth there instead... Good thing my bikini armor&#39;s crotch plate is made of such thick metal. I guess this awful outfit isn&#39;t just embarrassing...&quot;
 You&#39;re thankful for the unexpected protection your bikini armor brought you.
@@ -1844,8 +1898,7 @@ All of your sensitive spots, even all the way up to your chest, have been squirt
 &quot;Haah... Haah... Nnh, ah, haahn... I-I&#39;ve gotsh to keep going...&quot;
 You continue on, shuddering and squirming from the unbearably sweet smell of the aphrodisiacs, as well as the lust boiling up within you.
 
-&lt;b&gt;→ [[▷130|130]]&lt;/b&gt;
-</tw-passagedata><tw-passagedata pid="80" name="130" tags="" position="629,4482" size="100,100">By the time you make it out of the aphrodisiac trap field, the aphrodisiacs have made it so you&#39;re unable to keep a grip on yourself.
+&lt;b&gt;→ [[▷130|130]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="80" name="130" tags="" position="629,4460" size="100,100">By the time you make it out of the aphrodisiac trap field, the aphrodisiacs have made it so you&#39;re unable to keep a grip on yourself.
 &quot;Aahn, I can&#39;t take any more... My body&#39;s so hot I&#39;m going to go crazy...&quot;
 Unable to bear the throbbing that the aphrodisiacs have forced upon your body, you begin to masturbate.
 &quot;Haahn, d-digging at the hole like this feels so good! ♥ Aah... I can&#39;t... stop my fingers... ♥&quot;
@@ -1956,7 +2009,884 @@ With newfound morale for defeating the Demon Lord, you head through the now-open
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $floor=3&gt;&gt;
 
-&lt;b&gt;→ [[▷131|131]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="86" name="131" tags="" position="464,5242" size="100,100">To be continued...</tw-passagedata></tw-storydata>
+&lt;b&gt;→ [[▷131|131]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="86" name="131" tags="" position="464,5242" size="100,100">You climb the stairs and step foot into the third floor.
+&quot;I&#39;m finally on the third floor, huh... No, not &#39;finally&#39; - I&#39;m &lt;i&gt;only&lt;/i&gt; on the third floor, I guess...&quot;
+According to the explanation the Demon Lord gave you, this underground labyrinth has ten floors in total, so you&#39;ve still got a lot ahead of you.
+&quot;Just you wait, Demon Lord! I&#39;m going to take my comrades back for sure and then defeat you!&quot;
+You begin walking into the third floor, which is made up of a natural cave.
+
+&lt;b&gt;
+→ [[▷124|124]]&lt;/b&gt;
+</tw-passagedata><tw-passagedata pid="87" name="124" tags="" position="464,5391" size="100,100">After proceeding through the natural cave, you find a three-way fork.
+&quot;Another fork, huh...&quot;
+There are three paths ahead of you - left, right, and center.
+You can see a familiar bluish mist hanging over the path on the right.
+The central path seems to have poor drainage, and some parts of it appear to be submerged and difficult to traverse.
+You notice that the path on the left is incredibly dark and humid.
+Your intuition senses an unknown threat on the left path. You can&#39;t help but think that it&#39;s dangerous.
+After observing the three paths the cave forks into, you&#39;ve made your decision.
+You...
+
+&lt;b&gt;1. Take the right path with the bluish mist hanging over it.
+▶ If you have a value of 2 or less for &lt;u&gt;flag H&lt;/u&gt;...
+&lt;&lt;if $tracking==0 or $flag_h&lt;=2&gt;&gt;
+→ &lt;&lt;link &quot;▷169&quot; &quot;169&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;else&gt;&gt;
+→ ▷169
+&lt;&lt;/if&gt;&gt;
+▶ If you have a value of 3 or more for &lt;u&gt;flag H&lt;/u&gt;...
+&lt;&lt;if $tracking==0 or $flag_h&gt;=3&gt;&gt;
+→ &lt;&lt;link &quot;▷181&quot; &quot;181&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;else&gt;&gt;
+→ ▷181
+&lt;&lt;/if&gt;&gt;
+2. Take the partially submerged central path.
+→ &lt;&lt;link &quot;▷158&quot; &quot;158&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+3. Take the dark, creepy, and unsettling left path.
+→ &lt;&lt;link &quot;▷094&quot; &quot;094&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[169]]
+[[181]]
+[[158]]
+[[094]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="88" name="169" tags="" position="239,5542" size="100,100">You step into the path with the bluish mist hanging over it.
+The mist isn&#39;t all that thick, but it&#39;s thick enough to impede your vision of the path ahead.
+&quot;Haah... Haah... I thought it was suspicious... Nnh, so it&#39;s an aphrodisiac mist, huh...&quot;
+You manage to make it through the aphrodisiac mist-covered path, and find an out-of-place shop on the other side.
+&quot;Welcome! This is the bewitching, suspicious demon shop.&quot;
+A demon-like figure wrapped up tight in a robe greets you in a raspy, elderly-sounding voice.
+
+&lt;b&gt;(&lt;u&gt;Pleasure&lt;/u&gt; +5. &lt;u&gt;Unsatisfied&lt;/u&gt;. Add +1 to &lt;u&gt;flag H&lt;/u&gt;.)
+&lt;&lt;set $pleasure_damage=5, $unsatisfied=1, $flag_h+=1&gt;&gt;
+&lt;&lt;takePleasureDamage&gt;&gt;
+
+1. If you don&#39;t have &lt;u&gt;flag J&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_j==0&gt;&gt;
+→ [[▷119|119]]
+&lt;&lt;else&gt;&gt;
+→ ▷119
+&lt;&lt;/if&gt;&gt;
+2. If you have flag &lt;u&gt;flag J&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_j==1&gt;&gt;
+→ [[▷080|080]]
+&lt;&lt;else&gt;&gt;
+→ ▷080
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="89" name="181" tags="" position="389,5542" size="100,100">&quot;Haah... Haah... Nnh, so this really is an aphrodisiac mist, huh...&quot;
+Your body heats up with every breath you take of the mist, and you begin to feel a throbbing deep within your abdomen.
+&quot;Nnh, haah... This path&#39;s pretty long...&quot;
+Your body quivers as you continue forward. However, as a result of having had the aphrodisiac mist eat away at your body multiple times before now, you&#39;re unable to make it through the path.
+&quot;Ahah, nnh, I-I caan&#39;t... My belly&#39;s sho hot, it&#39;s sho lonely, it wants shomethiing! ♥&quot;
+You collapse on the spot.
+
+&lt;b&gt;1. If you don&#39;t have &lt;u&gt;flag J&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_j==0&gt;&gt;
+→ [[▷064|064]]
+&lt;&lt;else&gt;&gt;
+→ ▷064
+&lt;&lt;/if&gt;&gt;
+2. If you have &lt;u&gt;flag J&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_j==1&gt;&gt;
+→ [[▷141|141]]
+&lt;&lt;else&gt;&gt;
+→ ▷141
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="90" name="158" tags="" position="818,5539" size="100,100">You step into the partially submerged and difficult to traverse path.
+&quot;Yeah, this isn&#39;t so bad that I can&#39;t make it through.&quot;
+After checking out the path, it seems that the water is deep enough to impede your movement a little, but not bad enough to prevent you from walking through it.
+&quot;I guess for the time being, I&#39;ll go as far as I can...&quot;
+You continue forward, avoiding the submerged parts of the path whenever possible.
+...Gloop...
+&quot;Hm? I thought I felt something move just now...&quot;
+You tilt your head in confusion and look around.
+&quot;...Was it my imagination?&quot;
+You continue forward like before.
+...Gloooop...
+&quot;No, I definitely felt a presence. What moved just now?&quot;
+You look around, and upon glancing behind you, you can tell that something&#39;s moving.
+&quot;Don&#39;t tell me, is all this stuff I thought was water actually a Pure Slime?&quot;
+Indeed, it appears that everything you thought was water was actually a transparent slime camouflaging itself as puddles.
+Looking back the way you came, your escape has been cut off entirely by slime, with more slime waiting for you up ahead.
+(Kuh, Pure Slimes are monsters that prey off of the magic of living things. I&#39;ve got no choice but to force my way through!)
+You forcefully step forward into the slime-covered path.
+
+&lt;b&gt;⚫Consult &lt;u&gt;flags G and J&lt;/u&gt;.
+
+1. If only &lt;u&gt;flag G&lt;/u&gt; is checked off...
+&lt;&lt;if $tracking==0 or ($flag_g==1 and $flag_j==0)&gt;&gt;
+→ [[▷182|182]]
+&lt;&lt;else&gt;&gt;
+→ ▷182
+&lt;&lt;/if&gt;&gt;
+2. If &lt;u&gt;flag J&lt;/u&gt; is checked off...
+&lt;&lt;if $tracking==0 or $flag_j==1&gt;&gt;
+→ [[▷041|041]]
+&lt;&lt;else&gt;&gt;
+→ ▷041
+&lt;&lt;/if&gt;&gt;
+3. If neither &lt;u&gt;flag G or J&lt;/u&gt; are checked off...
+&lt;&lt;if $tracking==0 or ($flag_g==0 and $flag_j==0)&gt;&gt;
+→ [[▷083|083]]
+&lt;&lt;else&gt;&gt;
+→ ▷083
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="91" name="094" tags="" position="1140,5544" size="100,100">Take the dark, creepy, and unsettling path.
+&quot;I&#39;m kind of getting a bad feeling about this...&quot;
+The path gets darker and darker as you continue forward with that bad feeling.
+
+&lt;b&gt;1. If &lt;u&gt;flag I&lt;/u&gt; is at least 1...
+&lt;&lt;if $tracking==0 or $flag_i&gt;=1&gt;&gt;
+→ [[▷027|027]]
+&lt;&lt;else&gt;&gt;
+→ ▷027
+&lt;&lt;/if&gt;&gt;
+2. If &lt;u&gt;flag I&lt;/u&gt; isn&#39;t at least 1...
+&lt;&lt;if $tracking==0 or $flag_i==0&gt;&gt;
+→ [[▷123|123]]
+&lt;&lt;else&gt;&gt;
+→ ▷123
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="92" name="119" tags="" position="164,5692" size="100,100">(That&#39;s weird, I feel like I&#39;ve heard this voice somewhere...)
+You look over the shopkeeper closely, but after seeing the demon race&#39;s distinct curse marks (similar to tattoos) on the skin that you can see through the gaps in their robe, you conclude that you&#39;ve never met them before. You don&#39;t personally know any demons other than the Demon Lord, after all.
+&quot;Onii... Rather, Ojou-chan, if there&#39;s something you&#39;d like, why don&#39;t you go ahead and by it? You can pay for it with a bit of your pure soul&#39;s power. I&#39;ll make it free in exchange for that.&quot; the demon shopkeeper says before leading you to a shelf with their wares. &quot;Come, come, take a look. Well, there aren&#39;t many tools that humans can use, though.&quot;
+Upon the shopkeeper&#39;s urging, you look at the shelf and see that it&#39;s full of magical devices that run off of the &quot;dirty magic&quot; that demons use. At a glance, you don&#39;t see anything that you can use.
+&quot;Let&#39;s see, perhaps these are about all you can make use of, Ojou-chan?&quot;
+The shopkeeper shows you a torch set and a protective charm. The torch set is a set of three torches and a piece of flint, and the protective charm is the type that you hang from your neck like a pendant.
+&quot;This torch set is useful for lighting dark places, and this protective will allow you to dispel a monster a single time. Quite impressive, no? I made the protective charm myself, in fact! I&#39;m quite proud of it!&quot;
+In particular, the demon shopkeeper is strongly recommending the protective charm to you.
+&quot;Let&#39;s see...&quot;
+You...
+
+&lt;b&gt;1. Buy the torch set.
+▶ If you don&#39;t have a number under &lt;u&gt;flag I&lt;/u&gt;...
+&lt;&lt;if $tracking==0 or $flag_i==0&gt;&gt;
+→ &lt;&lt;link &quot;▷172&quot; &quot;172&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;else&gt;&gt;
+→ ▷172
+&lt;&lt;/if&gt;&gt;
+▶ If you have a number under &lt;u&gt;flag I&lt;/u&gt;...
+&lt;&lt;if $tracking==0 or $flag_i==1&gt;&gt;
+→ &lt;&lt;link &quot;▷129&quot; &quot;129&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;else&gt;&gt;
+→ ▷129
+&lt;&lt;/if&gt;&gt;
+2. Buy the protective seal.
+→ &lt;&lt;link &quot;▷126&quot; &quot;126&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+3. Don&#39;t buy anything.
+→ &lt;&lt;link &quot;▷178&quot; &quot;178&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[172]]
+[[129]]
+[[126]]
+[[178]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="93" name="080" tags="" position="311,5693" size="100,100">&quot;Hey, do you have to say that every time?&quot; you say to the Magician. She  removes her robe to reveal her face.
+&quot;It&#39;s important to keep tradition in everything, don&#39;t you think, Hero?&quot;
+ she says before embracing you, practically coiling around you as she gropes your chest and crotch.
+&quot;Aah, your youthful body feels so good to touch, Hero! It gets full points!&quot;
+&quot;Hyi, hey, stop, don&#39;t go touching weird places!&quot;
+You shake off the Magician and wrap your arms around yourself in defense as you take a step back.
+&quot;Aah, that&#39;s too bad... You&#39;re pretty cute, you know? Hurry up and become fully ripe for me. ♥&quot;
+The Magician licks her lips with her red tongue, raping you with her heated eyes.
+Sensing that your body is in danger, a shudder runs up your spine.
+&quot;Anyway, Hero, since you&#39;ve stopped by my shop, why not buy something? The price is a bit of your pure soul&#39;s power. Let me lick it all over like it&#39;s a piece of candy. ♥&quot;
+The Magician opens and mouth and moves her tongue around suggestively. You think you feel your body get hotter for a moment.
+After shaking your head and expelling the unnecessary thoughts from your head, you take a look at the wares shelve.
+You...
+
+&lt;b&gt;1. Buy the torch set.
+▶ If you don&#39;t have &lt;u&gt;flag I&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_i==0&gt;&gt;
+→ &lt;&lt;link &quot;▷172&quot; &quot;172&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;else&gt;&gt;
+→ ▷172
+&lt;&lt;/if&gt;&gt;
+▶ If you have &lt;u&gt;flag I&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_i==1&gt;&gt;
+→ &lt;&lt;link &quot;▷129&quot; &quot;129&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;else&gt;&gt;
+→ ▷129
+&lt;&lt;/if&gt;&gt;
+2. Don&#39;t buy anything.
+→ &lt;&lt;link &quot;▷110&quot; &quot;110&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[172]]
+[[129]]
+[[110]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="94" name="172" tags="" position="0,5842" size="100,100">&quot;I guess I&#39;ll take this torch set?&quot;
+&quot;Quite the good eye you&#39;ve got. Make sure to think hard about when to use them, okay?&quot;
+The moment you take the torch set, you feel something leave your body.
+
+&lt;b&gt;(&lt;u&gt;Degradation&lt;/u&gt; +6. Add +3 to &lt;u&gt;Flag I&lt;/u&gt;.)
+&lt;&lt;set $degradation+=6, $flag_i+=3&gt;&gt;
+
+▶ If you don&#39;t have &lt;u&gt;flag J&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_j==0&gt;&gt;
+→ [[▷178|178]]
+&lt;&lt;else&gt;&gt;
+→ ▷178
+&lt;&lt;/if&gt;&gt;
+▶ If you have &lt;u&gt;flag J&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_j==1&gt;&gt;
+→ [[▷110|110]]
+&lt;&lt;else&gt;&gt;
+→ ▷110
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="95" name="129" tags="" position="120,5842" size="100,100">&quot;I guess I&#39;ll take this torch set?&quot;
+&quot;What, you want more? You&#39;ve already got some! With my shop being in the labyrinth and all, I don&#39;t exactly have an excess of these. I can&#39;t sell you any more.&quot;
+
+▶ If you don&#39;t have &lt;u&gt;flag J&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_j==0&gt;&gt;
+→ [[▷178|178]]
+&lt;&lt;else&gt;&gt;
+→ ▷178
+&lt;&lt;/if&gt;&gt;
+▶ If you have &lt;u&gt;flag J&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_j==1&gt;&gt;
+→ [[▷110|110]]
+&lt;&lt;else&gt;&gt;
+→ ▷110
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="96" name="126" tags="" position="239,5841" size="100,100">&quot;Alright, I guess I&#39;ll take the protective charm?&quot;
+&quot;Ooh, you&#39;re going to buy it! Quite the eye for quality you&#39;ve got there! As I said before, I&#39;m proud of this creation! Go on, it&#39;s the pendant type, so you can put it on!&quot;
+The moment you put on the charm as instructed, an incredibly unpleasant feeling runs throughout your entire body.
+&quot;Tadaaaah! Aah, I got the hero with my curse!&quot; the shopkeeper explains in the voice of a cute young girl, singing as if she were a ringing bell. She then takes off her robe.
+As it turns out, the shopkeeper was the Magician!
+However, her sparkling emerald blond hair has faded to a dull silver, and she has sheep horns growing out of her head. She&#39;s changed drastically from her old appearance, and now looks like a full-blown demon, just like the Demon Lord.
+&quot;W-What&#39;s up with how you look? And what do you mean, &#39;curse&#39;!?&quot; you ask in a panic. Then, the now-demonized Magician responds back to you.
+&quot;Goodness, you&#39;re so bold, Hero! ♥ This curse lays the groundwork for you becoming mine. As long as you&#39;re wearing that charm, my magic will run weak a stream of pleasure through your body so you can feel me at all times! As for my appearance... I&#39;ll explain it when I feel like it. See you later, Hero! ♥&quot;
+After the Magician finishes prattling on, she casually kisses you on the lips, then snaps her fingers.
+You feel space distort around you, and before you can finish blinking, you&#39;ve returned to the three-way fork in the path.
+&quot;Just... Just what happened to her...?&quot;
+You recall the Magician&#39;s appearance, totally unlike how you remember her, and sigh sadly.
+
+&lt;b&gt;(Check off the &lt;u&gt;sex toy&lt;/u&gt; status.)
+(&lt;u&gt;Degradation&lt;/u&gt; +10. Check off &lt;u&gt;flag J&lt;/u&gt;. Add +1 to &lt;u&gt;flag β&lt;/u&gt;.)
+&lt;&lt;set $sex_toy=1, $degradation+=10, $flag_j=1, $flag_beta+=1&gt;&gt;
+
+→ [[▷124|124]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="97" name="178" tags="" position="389,5842" size="100,100">&quot;If there&#39;s ever something you&#39;d like, just come on back. Kukuku...&quot;
+The shopkeeper laughs suspiciously as they escort you out of the shop.
+&quot;Ugh, I&#39;ll have to go back down the same path, huh...&quot;
+After the shopkeeper sees you off, you return down the path you came from.
+
+&lt;b&gt;(&lt;u&gt;Pleasure&lt;/u&gt; +5. Add +1 to &lt;u&gt;flag H&lt;/u&gt;.)
+&lt;&lt;set $pleasure_damage=5, $flag_h+=1&gt;&gt;
+&lt;&lt;takePleasureDamage&gt;&gt;
+
+→ [[▷124|124]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="98" name="110" tags="" position="0,5992" size="100,100">&quot;Kukuku, I&#39;m glad you came again! ♥ How is it? As long as you&#39;re wearing that charm, you can feel my love through its magical power, right? Hurry up and let that curse take over and become mine. Okay, I&#39;ll be waiting for you to come see me again, Hero! ♥&quot;
+After the Magician finishes prattling on, she casually kisses you on the lips, then snaps her fingers.
+You feel a disruption in the space around you, and before you can finish blinking, you&#39;ve returned to the three-way fork in the path.
+
+&lt;b&gt;(&lt;u&gt;Degradation&lt;/u&gt; +5. Add +1 to &lt;u&gt;flag β&lt;/u&gt;.)
+&lt;&lt;set $degradation+=5, $flag_beta+=1&gt;&gt;
+
+→ [[▷124|124]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="99" name="064" tags="" position="434,5692" size="100,100">&quot;Oh? How pathetic, collapsing in a place like this.&quot;
+A silhouette with a hood pulled over their eyes appears and looks you over.
+&quot;Hm, it appears you&#39;re in a state of shock from aphrodisiac addiction. You&#39;ll be in danger if you stay here, so I&#39;ll return you to the entrance.&quot;
+The hooded figure snaps their fingers and you feel space distort around you.
+&quot;Uuh... Nnh? What? I&#39;m back where I was...?&quot;
+After coming to, you find that you&#39;ve returned to the three-way fork in the path.
+
+&lt;b&gt;(Check off the &lt;u&gt;in heat&lt;/u&gt; status.)
+(&lt;u&gt;Climaxes&lt;/u&gt; +1. You &lt;u&gt;pass out&lt;/u&gt;. &lt;u&gt;Degradation&lt;/u&gt; +1.)
+&lt;&lt;set $climax_damage=11, $degradation+=1&gt;&gt;
+&lt;&lt;takeClimaxDamage&gt;&gt;
+
+→ [[▷124|124]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="100" name="141" tags="" position="554,5692" size="100,100">&quot;Oh my, if you&#39;re collapsed in a place like this, does that mean you were coming to see me?&quot;
+The demonized Magician appears before you.
+&quot;And that&#39;s quite the tasty-looking pussy you&#39;ve got there. It certainly looks like you want me to suck up your dripping love juices straight away...&quot;
+&quot;Huh...? Eh...?&quot;
+Upon seeing the Magician in front of you with your hazy vision, you manage to make a quiet sound.
+&quot;Hm? Oh, you&#39;re still conscious. As expected, Hero... Let&#39;s see, should I try tasting your love juices?&quot; the Magician says. Then, with you still collapsed on the ground, she pulls your lower half toward her, moves her face closer to it, and starts sucking up your loves juices, making loud and dirty sounds while doing so.
+Slurp, slurp, slurp, sluuuurp!
+&quot;Hyaaaaaaahn!? Nhoo! Don&#39;t suck on meeeeeeeeee!&quot; you moan as the Magician forcefully sucks on your privates.
+But she doesn&#39;t stop her. The Magician, desiring more of your love juices, carefully searches your genitals, finds a small meaty bud, and begins nibbling on it.
+&quot;A-A-Ah, hyi, nhoo! That&#39;sh t-too strong! ♥ It tingles, ahyiii! ♥&quot;
+Your moans turn into screams of climax from the Magician&#39;s technique as she eats you out and plays with your clitoris.
+Not just ending there, the protective charm you received from the Magician synchronizes with her power, and constant jolts of pleasure begin trespassing into your womb.
+&quot;Ah, uwaah! This is gonna make me, it&#39;sh gonna make me go crazy! I&#39;m already cumming! Nhyiii! ♥&quot;
+You climax consecutively, your body twitching and jumping up and down as the Magician sucks on you loudly.
+&quot;Nfu, gho ahead, jusht cum! ♥ Bite...&quot;
+&quot;Ahyiiiiiiiiiiiiiiihn! ♥&quot;
+The Magician strongly bites into your meaty bud, and you pass out as a large fountain of your love juices and urine sprays forth from your crotch.
+&quot;Kufufu, I guess my technique was too good for you. I&#39;ve made you pass you right.&quot;
+After finishing licking every inch of your now-soaked crotch, the Magician gives a satisfied smile.
+&quot;Aah, that was delicious. It&#39;s a bit of a shame, but I&#39;ll release you here for the time being.&quot; the Magician says. She then snaps her fingers, and you&#39;re engulfed in a distortion of space and sent back to the fork in the path, still unconscious.
+&quot;Uuh... Nnh? What? I&#39;m back where I was...? Was that a dream just now?&quot;
+After waking up, you incorrectly deduce that getting eaten out by the Magician was just a dream, but upon noticing some of the electrifying pleasure that still remains, as well as your soaking-wet crotch, you realize that it actually happened.
+&quot;Uuuh... I can&#39;t believe I passed out from having the Magician do that to me... How am I supposed to face her next time I see her?&quot;
+You blush as you sort out your thoughts, thinking about what to do next time you meet the Magician.
+
+&lt;b&gt;(Add +1 to &lt;u&gt;flag β&lt;/u&gt; +1.)
+(&lt;u&gt;Climaxes +9&lt;/u&gt; +9. You &lt;u&gt;pass out&lt;/u&gt;. &lt;u&gt;Degradation&lt;/u&gt; +4. Reset your &lt;u&gt;pleasure&lt;/u&gt;.)
+&lt;&lt;set $flag_beta+=1, $climax_damage=19, $degradation+=4&gt;&gt;
+&lt;&lt;takePleasureDamage&gt;&gt;
+&lt;&lt;set $pleasure=0&gt;&gt;
+
+→ [[▷124|124]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="101" name="182" tags="" position="681,5693" size="100,100">&quot;Haah... Haah... The slime is wrapping around me... so tightly...&quot;
+The more you press on, the more slime crawls up your body and restricts your movements.
+&quot;Kuh, ah... What the heck!? Why are my clothes melting!?&quot;
+You realize after the fact that the slime has started to melt your bunny suit.
+&quot;No, hey! Is this slime gonna make me naked at this rate!?&quot;
+You resist as best as you can, but your bunny suit is melted off, leaving you stark naked.
+
+&lt;b&gt;(&lt;u&gt;Pleasure&lt;/u&gt; +4. Uncheck &lt;u&gt;flag G&lt;/u&gt; and the &lt;u&gt;in heat&lt;/u&gt; status.)
+&lt;&lt;set $pleasure_damage=4, $flag_g=0, $in_heat=0&gt;&gt;
+&lt;&lt;takePleasureDamage&gt;&gt;
+
+→ [[▷072|072]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="102" name="041" tags="" position="819,5692" size="100,100">&quot;Kuh, damnit!&quot;
+You repel the slime coming at you as you continue forward.
+&quot;I&#39;m glad that it&#39;s putting up less resistance than I thought it would, but I guess it&#39;s due to this thing, huh...&quot;
+It appears that the sparkling protective charm hanging on your chest is keeping you safe you from the slime.
+&quot;Haah, nnh, but, this charm... Nnh, when it&#39;s working, this good-feeling electricity, haaahn, runs through me, but I can&#39;t, nfh, feel good, right? Not only that, nnh, but it&#39;s melting my clothes off!?&quot;
+A complex emotion stirs within you from being both protected and assaulted by the Magician&#39;s charm. You&#39;ve succeeded in making it through the slime-infested path.
+
+&lt;b&gt;(&lt;u&gt;Pleasure&lt;/u&gt; +5. If &lt;u&gt;flag G&lt;/u&gt; is checked off, uncheck it.)
+&lt;&lt;set $pleasure_damage=5, $flag_g=0&gt;&gt;
+&lt;&lt;takePleasureDamage&gt;&gt;
+
+→ [[▷164|164]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="103" name="083" tags="" position="969,5692" size="100,100">&quot;Uwaah!? The slime is wrapping around me!?&quot;
+The moment you step into the slime-filled corridor, slime begins crawling up your body.
+&quot;Haah... Haah... It&#39;s hard to walk like this!&quot;
+You force the slime off of you and keep moving, but the amount gradually increases, making it harder and harder to move. Not only that, but it&#39;s snuck inside your clothes and started crawling around your body as if it was licking you all over.
+&quot;...Hyaah, where do you think you&#39;re crawling into!?&quot;
+
+&lt;b&gt;→ [[▷072|072]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="104" name="072" tags="" position="681,5843" size="100,100">The corridor&#39;s slimes have swarmed you, melted your clothes, and begun crawling all over your body as if they were licking it.
+&quot;Kuh, aah! Damnit, they&#39;re going inside me!&quot;
+...Schlup, schlup...
+The slimes make dirty sounds as they wriggle your body through your genitals and your impure hole.
+&quot;Hah, aah, they&#39;re licking the inside of my belly... ♥&quot;
+The slimes lick every inch of the inner walls of your vagina and intestines clean. They begin to vibrate as they massage you, as if they&#39;re shaving away at your insides.
+&quot;Ofuh, aah!? No, d-doon&#39;t! Noo!&quot;
+You scream and bend over at the disgusting feeling of slime licking your insides.
+(Noo! I-I have to hurry up and get out of here! They&#39;re gonna make me cum to death!)
+You desperately continue forward as the slimes invade your insides.
+
+&lt;&lt;set $random_number=random(0,9)&gt;&gt;
+&lt;b&gt;⚫A random number between 0-9 has been rolled for you that will influence this page&#39;s outcome. Your number is $random_number.
+
+1. If the random number is 4...
+&lt;&lt;if $tracking==0 or $random_number==4&gt;&gt;
+→ [[▷184|184]]
+&lt;&lt;else&gt;&gt;
+→ ▷184
+&lt;&lt;/if&gt;&gt;
+2. If the random number isn&#39;t...
+&lt;&lt;if $tracking==0 or $random_number!=4&gt;&gt;
+→ [[▷012|012]]
+&lt;&lt;else&gt;&gt;
+→ ▷012
+&lt;&lt;/if&gt;&gt;
+&lt;/b&gt;</tw-passagedata><tw-passagedata pid="105" name="164" tags="" position="821,6123" size="100,100">After overcoming much hardship, you continue forward while enduring the flame of pleasure still smoldering inside your body.
+&quot;Kuh, huff... My body, nnnh, feels hot... I feel like... I&#39;m gonna do it anytime...&quot;
+You go out of your way to avoid saying the word &quot;masturbate&quot; in order to avoid thinking about it, but you don&#39;t realize just how much pressure your body is putting on you right now.
+You continue to walk onward, practically dragging your heavy body along.
+
+&lt;&lt;set $random_number=random(0,9)&gt;&gt;
+&lt;b&gt;⚫A random number between 0-9 has been rolled for you that will influence this page&#39;s outcome. Your number is $random_number.
+
+1. If the random number is odd...
+&lt;&lt;if $tracking==0 or $random_number%2==1&gt;&gt;
+→ [[▷037|037]]
+&lt;&lt;else&gt;&gt;
+→ ▷184
+&lt;&lt;/if&gt;&gt;
+2. If the random number is even...
+&lt;&lt;if $tracking==0 or $random_number%2==0&gt;&gt;
+→ [[▷144|144]]
+&lt;&lt;else&gt;&gt;
+→ ▷012
+&lt;&lt;/if&gt;&gt;
+&lt;/b&gt;</tw-passagedata><tw-passagedata pid="106" name="012" tags="" position="681,5993" size="100,100">&quot;Hah, aahn! ♥ Damnit... Kuh, nhoh, aah... I&#39;m... I-I&#39;m drowning, I&#39;m drowning in schliime... Hyii!&quot;
+The slime torments you mercilessly, even slipping under the folds of your genitals and trespassing upon the meaty bud it finds there.
+You feel strength leave your body as the slime trespasses upon your clitoris, but you grit your teeth and try your hardest to keep moving forward.
+&quot;Aheah, if... I don&#39;t hurry and get out of here... ♥ I-I can&#39;t shave the othersh... ♥&quot;
+As you desperately push forward while your body is invaded, images of the comrades you overcame hardships together with appear in your mind. You feel your energy renew itself in order to get them back, and keep moving.
+And then, you finally break through the slime-infested path.
+&quot;Haheah... I finally made it through the schlime... That felt rhreally ghood... ♥&quot;
+You collapse and pass out on the spot, having been forced to climax by the slime so many times that you can&#39;t even speak properly.
+Afterwards, the small slime remaining inside you keeps tormenting you, continuing to make you climax.
+You wake up a while later.
+
+&lt;b&gt;(&lt;u&gt;Climaxes&lt;/u&gt; +12. You &lt;u&gt;pass out&lt;/u&gt;. &lt;u&gt;Degradation&lt;/u&gt; + 6. Reset your &lt;u&gt;pleasure&lt;/u&gt;.)
+&lt;&lt;set $climax_damage=22, $degradation+=6&gt;&gt;
+&lt;&lt;takeClimaxDamage&gt;&gt;
+&lt;&lt;set $pleasure=0&gt;&gt;
+
+→ [[▷164|164]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="107" name="037" tags="" position="742,6278" size="100,100">After walking for a bit, you sense multiple presences in the corridor up ahead.
+&quot;This presence... Goblins? Wait, maybe hobgoblins or goblin generals...&quot;
+You look ahead and see three goblins. The cave ahead of you is straight, with no places to hide and avoid them.
+&quot;Gugyah!?&quot;
+Soon after you notice the goblins&#39; presence, they notice you as well, and turn around.
+Right after noticing each other, both you and the goblins ready your weapons and prepare for battle.
+&quot;Damnit, my body&#39;s heavy, I can&#39;t move properly... I can&#39;t catch a break...&quot;
+Even if they are just goblins, they&#39;re goblins that live in the Demon Lord&#39;s labyrinth. They&#39;re likely to be more difficult to deal with than regular ones.
+(But if it&#39;s only this many, I should be able to handle them even like this!)
+You run toward the goblins in order to get the first strike in.
+
+&lt;&lt;set $random_number=random(0,9)&gt;&gt;
+&lt;b&gt;⚫A random number between 0-9 has been rolled for you that will influence this page&#39;s outcome. Your number is $random_number.
+⚫The goblins have 5 HP each for a total of 15 between them.
+⚫Subtract the random number from the goblins&#39; HP.
+
+1. If the random number is 4...
+&lt;&lt;if $tracking==0 or $random_number==4&gt;&gt;
+→ [[▷150|150]]
+&lt;&lt;else&gt;&gt;
+→ ▷150
+&lt;&lt;/if&gt;&gt;
+2. If the random number isn&#39;t 4, and the goblins&#39; HP is 9 or lower...
+&lt;&lt;if $tracking==0 or ($random_number!=4 and 15-$random_number&lt;=9)&gt;&gt;
+→ [[▷114|114]]
+&lt;&lt;else&gt;&gt;
+→ ▷114
+&lt;&lt;/if&gt;&gt;
+3. If the random number isn&#39;t 4, and the goblins&#39; HP is 10 or higher...
+&lt;&lt;if $tracking==0 or ($random_number!=4 and 15-$random_number&gt;=10)&gt;&gt;
+→ [[▷011|011]]
+&lt;&lt;else&gt;&gt;
+→ ▷011
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="108" name="144" tags="" position="742,6762" size="100,100">You continue further into the cave, eventually reaching the end of the third floor, which is a large room containing door to the fourth floor.
+&quot;Another door to the next floor, huh...&quot;
+You&#39;ve overcome all sorts of obstacles on your way here, but this only marks 30% of the labyrinth. You think about just how long the path ahead is and sigh.
+&quot;I can&#39;t afford to just stand around. I&#39;ve got to hurry forward...&quot;
+You enter the room and look around.
+At the other side of the room is the door to the fourth floor. In front of it, there&#39;s an altar with a nude statue of the demon lord enshrined upon it.
+To the left and right of the altar are two paths leading further.
+&quot;It looks like unlike before, there are paths leading deeper...&quot;
+After looking around the room, you decide to investigate something in further detail.
+You...
+
+&lt;b&gt;1. Investigate the large door at the other end of the room.
+→ &lt;&lt;link &quot;▷155&quot; &quot;155&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+2. Investigate the altar bearing the nude Demon Lord statue in front of the door.
+→ &lt;&lt;link &quot;▷101&quot; &quot;101&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+3. Investigate the left path.
+→ &lt;&lt;link &quot;▷034&quot; &quot;034&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+4. Investigate the right path.
+→ &lt;&lt;link &quot;▷159&quot; &quot;159&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[155]]
+[[101]]
+[[034]]
+[[159]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="109" name="027" tags="" position="1089,5694" size="100,100">&quot;This is the kind of time to use a touch, huh.&quot;
+You take a torch out of your torch set and light it.
+(With this, the dark path should be safe!)
+You hold the torch in one hand and cheerfully continue down the dark path.
+Partway through, you find various pitfalls in the floor. Peering down them, you see meaty mouths with tentacles writhing inside them. If you were to fall in, surely those tentacles would violate your whole body.
+&quot;If I didn&#39;t have a torch... I might have fallen into one of these...&quot;
+You shudder as you imagine falling in and proceed carefully in order to avoid ending up in a hole.
+No problems occur in particular, and thanks to the torch, you successfully make it through the path.
+
+&lt;b&gt;(&lt;u&gt;Flag I&lt;/u&gt; -1. Erase it if it hits zero.)
+&lt;&lt;set $flag_i-=1&gt;&gt;
+
+→ [[▷037|037]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="110" name="123" tags="" position="1215,5694" size="100,100">&quot;If only I had a torch right about now... 《Light》! ...No good, huh.&quot;
+As you complain, you try to cast the light magic spell &quot;Light,&quot; but you&#39;re unable to maintain it.
+&quot;As I thought, I can&#39;t maintain my magic properly. This whole labyrinth might have powerful anti-magic effects...&quot;
+Ever since you were dropped into the labyrinth, you&#39;ve been unable to use your magic properly. There&#39;s likely something in place to stop you from forcing your way through the labyrinth with magic.
+&quot;It doesn&#39;t change the fact that I have to keep going, so I&#39;ve got no choice but to just proceed as carefully as I can...&quot;
+Unable to make satisfactory use of your light magic, you proceed carefully through the darkness.
+&quot;But man, it sure is dark in here. I can&#39;t even see the ground under my fe-huh?&quot;
+Your right foot misses the ground as you try to plant it down, and you lose your balance and fall forward.
+
+&lt;&lt;set $random_number=random(0,9)&gt;&gt;
+&lt;b&gt;⚫A random number between 0-9 has been rolled for you that will influence this page&#39;s outcome. Your number is $random_number.
+
+1. If the random number is odd...
+&lt;&lt;if $tracking==0 or $random_number%2==1&gt;&gt;
+→ [[▷021|021]]
+&lt;&lt;else&gt;&gt;
+→ ▷021
+&lt;&lt;/if&gt;&gt;
+2. If the random number is even...
+&lt;&lt;if $tracking==0 or $random_number%2==0&gt;&gt;
+→ [[▷168|168]]
+&lt;&lt;else&gt;&gt;
+→ ▷168
+&lt;&lt;/if&gt;&gt;
+&lt;/b&gt;</tw-passagedata><tw-passagedata pid="111" name="021" tags="" position="1140,5844" size="100,100">&quot;S-Shit!&quot;
+You quickly reach out and grab onto the side of the hole. 
+It appears that you&#39;ve been caught in a simple pitfall trap.
+&quot;Kuh, how awful, putting holes in the dark like this...&quot;
+You go to climb out of the hole, when...
+...Munch!
+&quot;...Huh? Wait a sec, what? What the heck is this!?&quot;
+Oh, dear. Upon trying to climb out of the hole, it bit onto your lower body.
+&quot;H-Hey! Hold on here! I-It&#39;s moving!? Hyiii!?&quot;
+You struggle to try to get free, but the hole&#39;s grip on you is tight, not allowing you to move.
+Furthermore, you feel a bunch of slender, slimy things wrapping around your lower half. You panic in response to the sensation and scream.
+&quot;S-Something&#39;s wrapping around me!? T-There&#39;s gross, slimy things wrapping around my lower half, ahyii!?&quot;
+The things you can&#39;t see that are coiling around your lower body are tentacles, and what you don&#39;t realize is that they&#39;re climbing up your body slowly as they lick it all over. All you can tell is that you feel soft, slimy things crawling all over you.
+&quot;Ah... Aah, my body&#39;s getting hotter and more sensitive!?&quot;
+Your lower half is slathered with aphrodisiacs excreted by the tentacles coiling around it, making it become more and more sensitive.
+&quot;D-Don&#39;t tell me, this pitfall... Is it alive? Am I going to get eaten!?&quot;
+The tentacles wrapping around you begin moving for real.
+Your legs are forcefully spread open, and slender tentacles covered in fine cilia begin rushing your slit.
+&quot;Hyi, uwaah!? What is this, what the heck is this!?&quot;
+You shriek, getting goosebumps on your back from the sensation, similar to many earthworms rampaging inside your vagina.
+
+&lt;b&gt;1. If you&#39;re a &lt;u&gt;virgin&lt;/u&gt;...
+&lt;&lt;if $tracking==0 or $non_virgin==0&gt;&gt;
+→ [[▷142|142]]
+&lt;&lt;else&gt;&gt;
+→ ▷142
+&lt;&lt;/if&gt;&gt;
+2. If you&#39;re a &lt;u&gt;non-virgin&lt;/u&gt;...
+&lt;&lt;if $tracking==0 or $non_virgin==1&gt;&gt;
+→ [[▷165|165]]
+&lt;&lt;else&gt;&gt;
+→ ▷165
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="112" name="168" tags="" position="1442,5841" size="100,100">&quot;Uhyawaaa!?&quot;
+A shout escapes your lip as you fall spectacularly into the hole.
+(Damnit, as if I&#39;m gonna get dropped down to the last floor after climbing this far!)
+You manage to cling to the wall and stop your descent.
+&quot;Phew, good thing there&#39;s something sticking out of the wall... But this thing sure is slimy... Wait, don&#39;t tell me... Are you kidding!?&quot;
+You feel regret once you learn the identity of the protuberance you&#39;re clinging to.
+The object sticking out from the wall is a gigantic, bumpy tentacle.
+No, calling it a tentacle wouldn&#39;t be correct. It&#39;s a wall of meat that covers the entire surface of the shaft and has fine, tightly-packing cilia growing on it.
+&quot;Shit, to think that the walls were a monster... But I&#39;m still climbing out of here!&quot;
+You place your hands and feet on the protuberances sticking out of the wall of meat and begin to climb.
+&quot;Kuh, climbing it is making it let out slime... I&#39;m slipping!?&quot;
+Your hand slips, causing you to fall even further.
+
+&lt;b&gt;1. If you don&#39;t have &lt;u&gt;flag F&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_f==0&gt;&gt;
+→ [[▷093|093]]
+&lt;&lt;else&gt;&gt;
+→ ▷093
+&lt;&lt;/if&gt;&gt;
+2. If you have &lt;u&gt;flag F&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_f==1&gt;&gt;
+→ [[▷077|077]]
+&lt;&lt;else&gt;&gt;
+→ ▷077
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="113" name="142" tags="" position="1140,5993" size="100,100">Shlick, shlick...
+The fibrous tentacles make quiet sounds as they slide themselves inside you.
+You shudder as your body tenses up from the sensation like being massaged from the inside.
+&quot;You&#39;re kidding, right? Tell me this isn&#39;t happening...&quot;
+The tentacles continue to press against your vaginal walls and spread you open further, increasing in number and excreting aphrodisiacs as they do.
+&quot;O-Ow... Stop, aah!?&quot;
+Unable to resist, you become aware of the sound of flesh ripping from inside your body.
+Indeed, that sound was your hymen tearing.
+
+&lt;b&gt;(Check off the &lt;u&gt;non-virgin&lt;/u&gt; status.)
+
+→ [[▷143|143]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="114" name="165" tags="" position="1260,5993" size="100,100">The tentacles make wet, squishy sounds as they slide themselves into your slit, spreading your insides open as they search around, while also excreting aphrodisiacs.
+&quot;Ah... Hyi, this is gross, this should be really gross, so why does it feel goood!?&quot;
+
+&lt;b&gt;→ [[▷143|143]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="115" name="143" tags="" position="1140,6144" size="100,100">The fibrous tentacles&#39; invasion doesn&#39;t end at your vagina. Upon finishing gently stroking your rear hole and loosening it up, they slither their way inside and spread it open all at once.
+&quot;Nhoaah!? That&#39;s the wrong hole, that&#39;s my butthoaahn!?&quot;
+Upon being opened, your hole is no longer able to resist. Just like your front hole, the tentacles rush into it and quickly trespass into your intestines.
+&quot;Aah, they&#39;re inside of me, both in front and back! There&#39;s so manyy, uhyiiii!&quot;
+The tentacles make wet, squishing noises as they violate your insides.
+With both your front and back holes opened by the tentacles, you can easily guess where they&#39;re going to go in order to find their next hole.
+&quot;Uaahn! They&#39;re messing up my insiiides, they&#39;re licking me all oveer!&quot;
+The swarm of quivering tentacles licks all over the inside of your vagina and anus, covering them with aphrodisiacs as they do so.
+You start to get used to the tentacles&#39; stimulation, and suddenly, the discomfort is swept away, leaving you with nothing to feel but pleasure.
+&quot;Aah, nnh, huff, haaahn, it feels, good, it feelsh good, n-no, noo!&quot;
+(It feels good, it feels so good I&#39;m gonna go crazy, I can&#39;t take thiis!)
+The tentacles dig roughly into both your vagina and anus, continuing to mercilessly thrust in and out.
+But that&#39;s not all. They peel back the skin around your clitoris, wrap around it, and begin stroking it. They also tickle your urethra.
+You&#39;re swallowed up by waves of madness and pleasure, unlike anything you&#39;ve ever experienced before, and immediately brought to climax.
+&quot;Ahyii! Nhoo, please, let me go, l-let me go, ahyiiiiiiiiiiiiii! ♥&quot;
+Having had your lower body conquered by the tentacles, you squirt all over and wet yourself.
+However, the real hell hadn&#39;t yet begun.
+&quot;Uwaah, I came already! Even though I already came!? Nhyii, I&#39;m cumming! I&#39;m cumming again even though I just came!&quot;
+The tentacles don&#39;t stop their invasion, forcing you to taste orgasm after orgasm.
+Lacking intelligence, the tentacles do nothing but continue to violate the target they&#39;ve seized until they&#39;re satisfied.
+The unfortunate part is that you&#39;ve wet yourself. Being the hero, your urine has high concentrations of magic in it and functions as &quot;maiden&#39;s holy water.&quot;
+The tentacles, having found such high-grade prey, continue to violate you in order to milk your urine from you.
+They eventually release you, but not until they&#39;ve the liquid from your body.
+Having been forced to experience countless climaxes, you&#39;re unconscious when you&#39;re ejected from the tentacles&#39; grasp.
+
+&lt;b&gt;(&lt;u&gt;Climaxes&lt;/u&gt; +17. You &lt;u&gt;pass out&lt;/u&gt;. &lt;u&gt;Degradation&lt;/u&gt; +8. If you have the &lt;u&gt;obscene asshole&lt;/u&gt; status checked, double your &lt;u&gt;climaxes&lt;/u&gt;.
+&lt;&lt;set $climax_damage=27, $degradation+=8&gt;&gt;
+&lt;&lt;if $obscene_asshole==1&gt;&gt;
+&lt;&lt;set $climax_damage*=2&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;takeClimaxDamage&gt;&gt;
+
+→ [[▷164|164]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="116" name="093" tags="" position="1386,5994" size="100,100">&quot;Uwaah!? I&#39;m slipping!? And my clothes are melting!?
+By the time you realize what&#39;s going on, the parts of your clothes that came in contact with the slime oozing out of the wall have begun to melt.
+&quot;Is this slime actually digestive acid!?&quot;
+Your clothes are melted by the slime. You go blue in the face as you imagine the worst.
+However, that wasn&#39;t the slime&#39;s only effect.
+
+&lt;b&gt;(Uncheck &lt;u&gt;flag G&lt;/u&gt; if it was checked.)
+
+→ [[▷077|077]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="117" name="077" tags="" position="1522,5995" size="100,100">&quot;Kuh, my skin&#39;s becoming sensitive where the slime seeps into it!&quot;
+After having slid further down the hole and having had the slime rubbed into your skin, you notice that your skin has become sensitive.
+This slime likely has components with aphrodisiac effects that stimulate the skin.
+Your now-sensitive skin makes you feel pleasure from something as slight as the small about of air blowing around in the hole.
+&quot;Haah... Haah... Crap, whenever I try to climb out, nnnh, my body rubs against the little hairs on the wall, haah... Nnh, kuuuh! T-This is impossible!&quot;
+Every time the cilia rub your sensitive skin, your body loses strength, and finally, your foot slips off of its hold.
+Shlick, slide, shlick!
+You resist as hard as you can, but you fall further as you continue clinging to the wall, which rubs against your whole body and drags you through maddening waves of pleasure.
+&quot;Nhoo! I-If this wall rubs me right now, I&#39;m gonna cum! Ahyiiiii!&quot;
+Though in reality, you only slide down the fibrous wall for a short time, for you, it feels like dragged-out torture.
+&quot;Ahyii, I&#39;m cumming, I-I&#39;m cumming while being rubbed by tentacles! I&#39;m cumming agaain! ♥&quot;
+You fall to the bottom of the whole as you experience multiple consecutive climaxes.
+
+&lt;b&gt;(&lt;u&gt;Climaxes&lt;/u&gt; +15. You &lt;u&gt;pass out&lt;/u&gt;. &lt;u&gt;Degradation&lt;/u&gt; +7.)
+&lt;&lt;set $climax_damage=25, $degradation+=7&gt;&gt;
+
+→ [[▷085|085]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="118" name="085" tags="" position="1522,6145" size="100,100">&quot;Uuuh... How far did I fall?&quot;
+After falling through the meaty hole, which wrapped your body in its cilia as you slid down it, it appears that you passed out.
+You come to and look around. There are doors in three different directions with plates on them reading &quot;Dressing Room,&quot; &quot;Labyrinth 2nd Floor,&quot; and &quot;Bathroom.&quot; From that, you realize you&#39;re somewhere familiar.
+&quot;This is the second floor&#39;s entrance, huh...&quot;
+You sigh dejectedly upon realizing you&#39;ve been sent quite ways back.
+
+&lt;&lt;set $floor=2&gt;&gt;
+
+&lt;b&gt;→ [[▷048|048]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="119" name="114" tags="" position="666,6429" size="100,100">The female body you&#39;ve got now doesn&#39;t have much muscle, nor does it have much stamina. Unable to move properly at the moment, you keep your movements as small as possible and avoid the goblins&#39; attacks and focus on counterattacking.
+&quot;Gyahyi!&quot;
+&quot;Gugyah!?&quot;
+One after another, you tear into the goblins with your sword as they attack you.
+&quot;Gyaah!&quot;
+You cut down the last goblin, finish all three of them, and put your sword away.
+
+&lt;b&gt;→ [[▷133|133]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="120" name="011" tags="" position="816,6429" size="100,100">&quot;Kuh... Haah... Haah... My body&#39;s so heavy...&quot;
+After defeating two of the goblins, you begin to breathe heavily, your shoulders moving up and down as you do.
+You&#39;re currently standing off against the last goblin, but it appears that you&#39;ve run out of stamina. You&#39;re unable to move, and if things go poorly, you may end up being defeated.
+&quot;Gigi!&quot;
+The last goblin makes a shrill cry as it charges toward you.
+You swing your sword at it in retaliation, but it bends down lower, managing to go under your blade and lack a tackle on you.
+&quot;Geuuh!? Kuh... Uuuh...&quot;
+Having no stamina remaining, the goblin&#39;s tackle disarms you, knocking your sword out of your hands.
+With your stamina at its limits, you force your body to move and reach for your dropped sword.
+However, you&#39;re unable to reach it. The reason being...
+&quot;Gihihi!&quot;
+The goblin grabbed hold of your hips as you tried crawling toward it.
+
+&lt;b&gt;1. If the &lt;u&gt;non-virgin&lt;/u&gt; status is checked off...
+&lt;&lt;if $tracking==0 or $non_virgin==1&gt;&gt;
+→ [[▷031|031]]
+&lt;&lt;else&gt;&gt;
+→ ▷031
+&lt;&lt;/if&gt;&gt;
+
+2. If the &lt;u&gt;non-virgin&lt;/u&gt; status isn&#39;t checked off...
+&lt;&lt;if $tracking==0 or $non_virgin==0&gt;&gt;
+→ [[▷097|097]]
+&lt;&lt;else&gt;&gt;
+→ ▷097
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="121" name="133" tags="" position="666,6579" size="100,100">&quot;Haah... Hah... I can&#39;t believe I was nearly impregnated by goblins...&quot;
+Blue in the face, you look down at the goblins you cut down.
+You hadn&#39;t encountered any humanoid male monsters up until this point, so you hadn&#39;t yet felt the danger you&#39;d just overcome - the danger of getting impregnated.
+Having made it through such a traumatic experience, it hits you for real that you&#39;re a female - an existence that can be impregnated by males.
+&quot;In future battles, I&#39;ve got to remember that I&#39;ve got a girl&#39;s body...&quot;
+You reflect on things to yourself and check the corpses of the goblins you defeated. Goblins that live in labyrinths are typically the underlings of those manage said labyrinths, after all.
+One by one, you check the goblins&#39; belongings, and end up finding a single key.
+&quot;This sure is a big and fancy key.&quot;
+The key is made of brass and has the &quot;Demon Lord&#39;s Insignia&quot; carved into its head.
+&quot;I guess I&#39;ll bring it with me...&quot;
+Having obtained the key, you continue deeper into the floor.
+
+&lt;b&gt;(Check off &lt;u&gt;flag K&lt;/u&gt;.)
+
+→ [[▷144|144]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="122" name="031" tags="" position="786,6578" size="100,100">&quot;Shit... I have to hurry and pick up my... sword!?&quot;
+The moment your desperately-extended fingertips make contact with your sword, the goblin thrusts his meat rod into your vagina.
+&quot;Uwaah! Damnit! C-Cut it out, you small-dicked bastard!&quot;
+Terrified, you shake your hips in order to push the goblin off, but it maintains a tight hold on your waist and doesn&#39;t let go, and even starts shaking its own hips and thrusting into you.
+&quot;Gyahyi, gyahihihihi...&quot;
+You badmouth the goblin as you resist, and as if it understands you, it begins speaking gleefully.
+&quot;Guhi, it&#39;s been a while, human females, their holes feel good, so warm, they&#39;re the best!&quot;
+Rather, since the goblin has responded to you in human language, it obviously &lt;i&gt;does&lt;/i&gt; understand you.
+&quot;Aah, nnh, please, pull it out, pull it out already!&quot;
+You shudder at the displeasure of having the goblins&#39; meat rod inside you and tearfully beg it to stop, but your plea doesn&#39;t get through to it and it just continues thrusting single-mindedly.
+Schwap, schwap, schwap, schwap!
+&quot;Ah... Nnh, you&#39;re going, pretty fast, for having such a small dick, hyi, ah... Nnh, no, stop it!&quot;
+The goblin buries its rod in your vagina with its overly-quick thrusts. Though the goblin&#39;s tool may be small, it uses that quality to thrust quickly, teasing you with the insufficient pleasure.
+&quot;Gyahi, gyahihi...&quot;
+The goblin laughs scornfully as it torments you.
+(Kuh, at this rate, I&#39;m gonna have a goblin cum inside me! Anything but that... I &lt;i&gt;have&lt;/i&gt; to avoid that!)
+Goblins are monsters capable of mating with other races, so if it ejaculates inside you, you&#39;ve got a 70% chance of getting pregnant. You&#39;re not an exception just because you&#39;re a hero.
+&quot;I&#39;m gonna get you pregnant!&quot;
+&quot;Kuh, aahn, t-that&#39;s rough, that&#39;s too rough... Damnit, owaah, nnh, kuh, come on, reach!&quot;
+You advance forward on the ground little by little as the goblin torments your insides, and your hand finally reaches your sword.
+&quot;Kuh, aaaaaahn!&quot;
+&quot;Gyapi!?&quot;
+You swing your sword at the goblin just as it makes you cum.
+In the same moment you slice at it, its bluish-white semen lands on your skin.
+You succeeded in killing the goblin and just barely avoiding having it ejaculate inside you.
+&quot;Haah... Haah... I&#39;m safe...&quot;
+You just barely avoided getting impregnated by a goblin.
+
+&lt;b&gt;(&lt;u&gt;Climaxes&lt;/u&gt; +1. Reset your &lt;u&gt;pleasure&lt;/u&gt;.)
+&lt;&lt;set $climax_damage=1&gt;&gt;
+&lt;&lt;takeClimaxDamage&gt;&gt;
+&lt;&lt;set $pleasure=1&gt;&gt;
+
+→ [[▷133|133]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="123" name="097" tags="" position="911,6575" size="100,100">&quot;No, aah... What are you going to do? What are you going to do...&quot;
+Your instincts give you a good general idea of what&#39;s about to happen, but your mind refuses to understand.
+&quot;Noo... Anything but that...&quot;
+It appears that seeing you plea for freedom with tearful eyes has only aroused the goblin further.
+&quot;Gyahihi, raping resisting females is so fun!&quot;
+The goblin responds gleefully to your resistance, and then plunges its meat rod into your vagina.
+&quot;Nghhhh!?&quot;
+You cry out as you feel the pain of being deflowered as the goblin&#39;s rod forces its way into you.
+&quot;A-Aah... I-I have... a goblin&#39;s dick... inside me...&quot;
+The goblin&#39;s disgusting rod, now inside your vagina, instills both pain and fear into you.
+&quot;Uwaah! No, no, noo! Pull it out, pull it out! Uwawaaaaaaaaaah!&quot;
+You enter a state of terror upon realizing that you&#39;ve lost your virginity to a goblin.
+&quot;Gyahi, gyahihihihi... It&#39;s been a while, human females, their holes feel good, so warm, they&#39;re the best!&quot;
+&quot;Aah, nnh, please, pull it out, pull it out already!&quot;
+You shudder at the displeasure of having the goblins&#39; meat rod inside you and scream, it just continues thrusting single-mindedly.
+Schwap, schwap, schwap, schwap!
+&quot;Hyi, ah, that&#39;s... too fast, nnh, no, don&#39;t, dooon&#39;t!&quot;
+Though the goblin&#39;s tool may be small, it uses that quality to thrust quickly as it trespasses upon your insides.
+&quot;Gyahi, gyahihi... I&#39;m gonna get you pregnant!&quot;
+&quot;N-No way!? No, stop, stoop!&quot;
+&quot;Get pregnant, get pregnant, get pregnant, get pregnant, get pregnaant!&quot;
+&quot;Kuh, t-that&#39;s rough, that&#39;s too rough... Damnit, aaah, nnh, kuh, aaaaaahn!&quot;
+Splurt... Gush... Spluuurt, spluuuurt...
+The goblin&#39;s rod finally bursts, and you feel something warm flow into your womb.
+&quot;Ah... Aah... A goblin... came inside me...&quot;
+You despair as the goblin&#39;s load, larger than you expected it to be, flows into your womb, and then pass out.
+After you&#39;ve awoken, the goblin is nowhere to be seen. Perhaps it was satisfied with that.
+You head further into the third floor with the goblin&#39;s semen dripping out of you as you walk.
+
+&lt;b&gt;(Check off the &lt;u&gt;non-virgin&lt;/u&gt; status.)
+(&lt;u&gt;Pleasure&lt;/u&gt; +7. &lt;u&gt;Degradation&lt;/u&gt; +5.)
+&lt;&lt;set $non_virgin=1, $pleasure_damage=7, $degradation+=5&gt;&gt;
+&lt;&lt;takePleasureDamage&gt;&gt;
+
+→ [[▷144|144]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="124" name="155" tags="" position="517,6912" size="100,100">You check out the door leading to the fourth floor.
+The door has the &quot;Demon Lord&#39;s Insignia&quot; carved into it in brass with a keyhole below it.
+
+&lt;b&gt;1. If you have &lt;u&gt;flag K&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_k==1&gt;&gt;
+→ [[▷047|047]]
+&lt;&lt;else&gt;&gt;
+→ ▷047
+&lt;&lt;/if&gt;&gt;
+2. If you don&#39;t have &lt;u&gt;flag K&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_k==0&gt;&gt;
+→ [[▷006|006]]
+&lt;&lt;else&gt;&gt;
+→ ▷006
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="125" name="101" tags="" position="667,6912" size="100,100">You approach the altar bearing the nude Demon Lord statue and investigate it.
+&quot;Hmm, is there no plate this time around...?&quot;
+Previously, there was always a plate near the statue&#39;s feet with instructions written on it, but there&#39;s no such plate this time.
+&quot;What&#39;s he going to have me do this time?&quot;
+Next, you check the statue itself. Its right arm is extended upwards with a finger pointing to the sky, and its left is pointed forward with its thumb and pointer finger making a ring.
+&quot;Is this pose supposed to mean something?&quot;
+And then, after observing the statue closely, you realize something.
+&quot;I&#39;m not feeling the unpleasant presence I felt from the other statues...&quot;
+Thinking back, the Demon Lord had been possessing these statues up until now. The fact that you don&#39;t feel the same presence this time around might indicate that he&#39;s not inside this one.
+&quot;So that means that he might not mess around with me this time...&quot;
+You decide to investigate something other than the altar.
+
+&lt;b&gt;→ [[▷121|121]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="126" name="034" tags="" position="817,6912" size="100,100">You decide to check the right path in the room containing the door to the fourth floor.
+&quot;...There don&#39;t seem to be any traps or anything.&quot;
+Continuing down the path, you arrive at a small room with an elegantly-decorated gold treasure chest smack-dab in the middle of it.
+&quot;What the heck is this chest... Isn&#39;t this a bit &lt;i&gt;too&lt;/i&gt; suspicious?&quot;
+Considering that the dungeon has been filled with traps up until this point you can&#39;t help but be skeptical of the clearly suspicious chest.
+You...
+
+&lt;b&gt;1. Open the chest.
+→ &lt;&lt;link &quot;▷079&quot; &quot;079&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+2. Don&#39;t open the chest.
+→ &lt;&lt;link &quot;▷148&quot; &quot;148&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[079]]
+[[148]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="127" name="159" tags="" position="1001,6913" size="100,100">You decide to check the left path in the room containing the door to the fourth floor.
+&quot;...There don&#39;t seem to be any traps or anything.&quot;
+Continuing down the path, you arrive at a small room.
+&quot;What&#39;s up with this room...? It&#39;s totally empty...&quot;
+Peeking in the room, it doesn&#39;t appear as if there&#39;s anything inside it.
+You...
+
+&lt;&lt;choiceCheck&gt;&gt;
+&lt;b&gt;1. Leave without entering the room.
+→ &lt;&lt;link &quot;▷157&quot; &quot;157&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+2. Enter the room and check it out.
+→ &lt;&lt;link &quot;▷135&quot; &quot;135&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[157]]
+[[135]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="128" name="047" tags="" position="437,7058" size="100,100">You remember the brass key you have with the &quot;Demon Lord&#39;s Insignia&quot; carved into it and stick it into the keyhole then turn it.
+Click!
+&quot;...It opened.&quot;
+It appears that the key you held belonged to this door.
+Pushing on the door to open it, you can see the stairs to the next floor behind it.
+&quot;That opened kind of easily... This isn&#39;t a trap or something, right?&quot;
+You&#39;re skeptical since up until now, you&#39;ve always had to do something with the statues of the Demon Lord, but you carefully check out the area behind the door. After a bit of waiting and nothing happening, you proceed with caution up the stairs to the next floor.
+
+&lt;b&gt;(Uncheck &lt;u&gt;flag K&lt;/u&gt;.)
+&lt;&lt;set $flag_k=0&gt;&gt;
+
+→ [[▷174|174]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="129" name="006" tags="" position="603,7062" size="100,100">You don&#39;t have a key that fits the keyhole on the door.
+&quot;A keyhole... So that means that there&#39;s a key somewhere? Guess I&#39;ll have to look for it...&quot;
+You investigate somewhere else in order to locate the key.
+
+&lt;b&gt;→ [[▷121|121]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="130" name="121" tags="" position="602,6763" size="100,100">You resume your investigate of the room at the end of the third floor containing the door to the fourth floor.
+You...
+
+&lt;b&gt;1. Investigate the large door at the other end of the room.
+→ &lt;&lt;link &quot;▷155&quot; &quot;155&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+2. Investigate the altar bearing the nude Demon Lord statue in front of the door.
+→ &lt;&lt;link &quot;▷101&quot; &quot;101&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+3. Investigate the left path.
+→ &lt;&lt;link &quot;▷034&quot; &quot;034&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
+4. Investigate the right path.
+→ &lt;&lt;link &quot;▷159&quot; &quot;159&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/b&gt;
+&lt;&lt;if $invisible==1&gt;&gt;
+[[155]]
+[[101]]
+[[034]]
+[[159]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="131" name="174" tags="" position="741,7384" size="100,100">To be continued...</tw-passagedata><tw-passagedata pid="132" name="079" tags="" position="742,7062" size="100,100">&quot;It looks like there&#39;s probably something important in it, so I guess I&#39;ll at least open it and check.&quot;
+You remain on your guard as you open the chest.
+&quot;...!?&quot;
+The moment you open the chest, you see something shrine brightly and immediately jump backwards.
+Upon checking inside the chest, you see a brass key with the &quot;Demon Lord&#39;s Insignia&quot; carved into the head.
+&quot;This sure is a big and fancy key.&quot;
+From its appearance, it seems there&#39;s no doubt that it&#39;s an important item.
+&quot;I guess I&#39;ll bring it with me...&quot;
+After obtaining the key, you return to the room with the door to the fourth floor.
+
+&lt;b&gt;(Check off &lt;u&gt;flag K&lt;/u&gt;.)
+&lt;&lt;set $flag_k=1&gt;&gt;
+
+→ [[▷121|121]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="133" name="148" tags="" position="892,7062" size="100,100">&quot;This chest is clearly suspicious...&quot;
+You remain on guard as you observe the chest.
+&quot;...I&#39;ll pass on opening it.&quot;
+You decide to not open the chest, and return to the room with the door to the fourth floor.
+
+&lt;b&gt;→ [[▷121|121]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="134" name="157" tags="" position="1012,7062" size="100,100">&quot;...This room&#39;s suspicious...&quot;
+The room appears empty and feels like it&#39;s politely inviting you inside to check further.
+&quot;No matter how I think about it, I get the hunch that this room itself is a trap.&quot;
+You judge that entering the room would be dangerous and leave without going inside.
+
+&lt;b&gt;→ [[▷121|121]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="135" name="135" tags="" position="1132,7062" size="100,100">&quot;This room&#39;s suspicious no matter how I think about it...&quot;
+Someone went to the trouble of making this room despite it being empty. Would any adventurer &lt;i&gt;not&lt;/i&gt; think it to be suspicious? Likely very few.
+You&#39;re one of the vast majority that would find it suspicious.
+&quot;Guess I&#39;ll check it out...&quot;
+You take a step into the door in order to investigate it.
+&quot;Hmm... Nothing here, huh...&quot;
+Slam!
+&quot;Huh? What? What&#39;s going on? Why&#39;d the door close!?&quot;
+Turning around, the room&#39;s entrance has been closed off, and out of nowhere, a pink smoke has begun flowing into the room.
+&quot;What&#39;s this pink mist... Uuh!? Ahyii!?&quot;
+The moment you inhale a bit of the smoke, an overwhelming sweet smell invades your lungs.
+&quot;Hah, ah, nnnh... What&#39;s going on, my body... It&#39;s hot...&quot;
+Feeling something strange happening to your body, you crouch down on one knee and clasp your stomach.
+Your body temperature rose sharply after inhaling the smoke, and deep within your stomach, your womb can&#39;t help but ache.
+&quot;A-Aah... My belly&#39;s hoot... Ah, it&#39;s so hot, I can&#39;t... I can&#39;t hold baack!&quot;
+Unable to bear the aching, you run your finger along your crotch and begin furiously masturbating.
+&quot;Ah, nnnh... Kuh, fwaahn, nhoo, it&#39;s aching and aching and won&#39;t stoop!&quot;
+You&#39;re unable to control yourself amidst the constant aching and continue single-mindedly masturbating.
+
+&lt;b&gt;→ [[▷044|044]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="136" name="044" tags="" position="1132,7211" size="100,100">Clunk...
+The mechanism keeping the room&#39;s entrance shut opens and the pink smoke filling the room gently wafts outside.
+You&#39;re lying face-down inside the room, trembling from masturbating.
+&quot;Ah... Nnh! ♥ Sho hot... Sho hoot! ♥ My body&#39;s sho hot... Nhaah! ♥&quot;
+It seems like you&#39;ll need a bit of time to return to your normal mental state.
+After recovering, you shakily walk out of the room and return to the room with the door to the fourth floor.
+
+&lt;b&gt;(Check off the &lt;u&gt;in heat&lt;/u&gt; status.)
+(&lt;u&gt;Climaxes&lt;/u&gt; +17.)
+&lt;&lt;set $in_heat=1,$climax_damage=17&gt;&gt;
+&lt;&lt;takeClimaxDamage&gt;&gt;
+
+→ [[▷121|121]]&lt;/b&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},errorPrologRegExp=/^(?:(?:uncaught\s+(?:exception:\s+)?)?\w*(?:error|exception|_err):\s+)+/i,Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(errorPrologRegExp,"")+".":": unknown error."),"object"===(void 0===n?"undefined":_typeof(n))&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}(),Patterns=function(){var e=function(){var e=new Map([[" ","\\u0020"],["\f","\\f"],["\n","\\n"],["\r","\\r"],["\t","\\t"],["\v","\\v"],[" ","\\u00a0"],[" ","\\u1680"],["᠎","\\u180e"],[" ","\\u2000"],[" ","\\u2001"],[" ","\\u2002"],[" ","\\u2003"],[" ","\\u2004"],[" ","\\u2005"],[" ","\\u2006"],[" ","\\u2007"],[" ","\\u2008"],[" ","\\u2009"],[" ","\\u200a"],["\u2028","\\u2028"],["\u2029","\\u2029"],[" ","\\u202f"],[" ","\\u205f"],["　","\\u3000"],["\ufeff","\\ufeff"]]),t=/^\s$/,r="";return e.forEach(function(e,n){t.test(n)||(r+=e)}),r?"[\\s"+r+"]":"\\s"}(),t="\\s"===e?"\\S":e.replace(/^\[/,"[^"),r="[0-9A-Z_a-z\\-\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u00ff\\u0150\\u0170\\u0151\\u0171]",n=r.replace("\\-",""),a=function(){return"("+r+"+)\\(([^\\)\\|\\n]+)\\):|("+r+"+):([^;\\|\\n]+);|((?:\\."+r+"+)+);|((?:#"+r+"+)+);"}();return Object.freeze({space:e,spaceNoTerminator:"[\\u0020\\f\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u202f\\u205f\\u3000\\ufeff]",lineTerminator:"[\\n\\r\\u2028\\u2029]",notSpace:t,anyChar:"(?:.|[\\n\\r\\u2028\\u2029])",anyLetter:r,anyLetterStrict:n,identifierFirstChar:"[$A-Z_a-z]",identifierNextChar:"[$0-9A-Z_a-z]",identifier:"[$A-Z_a-z][$0-9A-Z_a-z]*",variableSigil:"[$_]",variable:"[$_][$A-Z_a-z][$0-9A-Z_a-z]*",macroName:"[A-Za-z][\\w-]*|[=-]",templateName:"[A-Za-z][\\w-]*",cssImage:"\\[[<>]?[Ii][Mm][Gg]\\[(?:\\s|\\S)*?\\]\\]+",inlineCss:a,url:"(?:file|https?|mailto|ftp|javascript|irc|news|data):[^\\s'\"]+"})}();!function(){!function(e){if(e&&e.prototype&&null==e.prototype.firstElementChild){var t=Node.ELEMENT_NODE;Object.defineProperty(e.prototype,"firstElementChild",{get:function(){for(var e=this.childNodes,r=0;r<e.length;++r){var n=e[r];if(n.nodeType===t)return n}return null}})}}(window.Node||window.Element)}(),function(){function e(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n=void 0===t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var t=function(){function e(e,n){var a=String(e);if(!a)return a;switch(n){case"start":return t.test(a)?a.replace(t,""):a;case"end":return r.test(a)?a.replace(r,""):a;default:throw new Error('_trimString called with incorrect where parameter value: "'+n+'"')}}var t=new RegExp("^"+Patterns.space+Patterns.space+"*"),r=new RegExp(""+Patterns.space+Patterns.space+"*$");return e}();Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,writable:!0,value:function(){function e(){if(null==this)throw new TypeError("Array.prototype.flat called on null or undefined");var t=0===arguments.length?1:Number(arguments[0])||0;return t<1?Array.prototype.slice.call(this):Array.prototype.reduce.call(this,function(r,n){return n instanceof Array?r.push.apply(r,_toConsumableArray(e.call(n,t-1))):r.push(n),r},[])}return e}()}),Array.prototype.flatMap||Object.defineProperty(Array.prototype,"flatMap",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatMap called on null or undefined");return Array.prototype.map.apply(this,arguments).flat()}}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(n===t||n!==n&&t!==t)return!0}return!1}}),Object.entries||Object.defineProperty(Object,"entries",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.entries object parameter must be an object");return Object.keys(e).map(function(t){return[t,e[t]]})}}),Object.fromEntries||Object.defineProperty(Object,"fromEntries",{configurable:!0,writable:!0,value:function(e){return Array.from(e).reduce(function(e,t){if(Object(t)!==t)throw new TypeError("Object.fromEntries iterable parameter must yield objects");return t[0]in e?Object.defineProperty(e,t[0],{configurable:!0,enumerable:!0,writable:!0,value:t[1]}):e[t[0]]=t[1],e},{})}}),Object.getOwnPropertyDescriptors||Object.defineProperty(Object,"getOwnPropertyDescriptors",{configurable:!0,writable:!0,value:function(e){if(null==e)throw new TypeError("Object.getOwnPropertyDescriptors object parameter is null or undefined");var t=Object(e);return Reflect.ownKeys(t).reduce(function(e,r){var n=Object.getOwnPropertyDescriptor(t,r);return void 0!==n&&(r in e?Object.defineProperty(e,r,{configurable:!0,enumerable:!0,writable:!0,value:n}):e[r]=n),e},{})}}),Object.values||Object.defineProperty(Object,"values",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.values object parameter must be an object");return Object.keys(e).map(function(t){return e[t]})}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:e(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:n+e(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return t(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return t(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return t(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return t(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r)<0&&(r=0),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n)<0&&(n=e-1),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){return e[0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1))]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var e=Array.from(this);if(0===arguments.length)return e;var t=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),r=t.length;if(0===r)return e;for(var n=Array.prototype.indexOf,a=Array.prototype.push,i=0;i<r;++i){var o=t[i];-1===n.call(e,o)&&a.call(e,o)}return e}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;-1!==(r=e.call(this,t,r));)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.concat.apply([],arguments),r=t.length,n=[],a=0;a<e;++a)for(var i=this[a],o=0;o<r;++o){var s=t[o];if(i===s||i!==i&&s!==s){n.push(a);break}}for(var u=[],l=0,c=n.length;l<c;++l)u[l]=this[n[l]];for(var d=Array.prototype.splice,f=n.length-1;f>=0;--f)d.call(this,n[f],1);return u}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"deleteWith",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.deleteWith called on null or undefined");if("function"!=typeof e)throw new Error("Array.prototype.deleteWith predicate parameter must be a function");var r=this.length>>>0;if(0===r)return[];for(var n=Array.prototype.splice,a=[],i=[],o=0;o<r;++o)e.call(t,this[o],o,this)&&(i.push(this[o]),a.push(o));for(var s=a.length-1;s>=0;--s)n.call(this,a[s],1);return i}}),Object.defineProperty(Array.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.first called on null or undefined");if(0!=this.length>>>0)return this[0]}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.last called on null or undefined");var e=this.length>>>0;if(0!==e)return this[e-1]}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do{a.push(n.call(this,_random(0,i--),1)[0])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){return this[0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)))]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do{o=_random(0,i)}while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.unshift,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function(e,t,r){var n=Number(e);return Number.isNaN(n)?NaN:n.clamp(t,r)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch(void 0===i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return-1!==String.prototype.indexOf.apply(this,arguments)}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;-1!==(n=t.call(this,e,n));)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.first called on null or undefined");return _getCodePointStartAndEnd(String(this),0).char}}),Object.defineProperty(String.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.last called on null or undefined");var e=String(this);return _getCodePointStartAndEnd(e,e.length-1).char}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n)<0&&(a=0):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return void 0!==r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.flat.call(this,1/0)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Opera:!t&&("object"===_typeof(window.operamini)||e.includes("opera mini")),Windows:t||/iemobile|wpdesktop/.test(e),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Opera||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null,u=e.includes("vivaldi");return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s,isVivaldi:u})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=e&&function(){try{var e=document.createElement("audio").play();return e.catch(function(){}),e instanceof Promise}catch(e){}return!1}(),r=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&!Browser.isMobile.any()&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),n=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),a=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),i=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}(),o=function(){try{return"ontouchstart"in window||!!window.DocumentTouch&&document instanceof window.DocumentTouch||!!navigator.maxTouchPoints||!!navigator.msMaxTouchPoints}catch(e){}return!1}(),s=function(){try{for(var e=new Map([["transition","transitionend"],["MSTransition","msTransitionEnd"],["WebkitTransition","webkitTransitionEnd"],["MozTransition","transitionend"]]),t=[].concat(_toConsumableArray(e.keys())),r=document.createElement("div"),n=0;n<t.length;++n)if(r.style[t[n]]!==undefined)return e.get(t[n])}catch(e){}return!1}();return Object.freeze({audio:e,audioPromise:t,fileAPI:r,geolocation:n,mutationObserver:a,performance:i,touch:o,transitionEndEvent:s})}(),Visibility=function(){function e(){return Boolean(r&&document[r.hiddenProperty])}function t(){return r&&document[r.stateProperty]||"visible"}var r=function(){try{return Object.freeze([{hiddenProperty:"hidden",stateProperty:"visibilityState",changeEvent:"visibilitychange"},{hiddenProperty:"webkitHidden",stateProperty:"webkitVisibilityState",changeEvent:"webkitvisibilitychange"},{hiddenProperty:"mozHidden",stateProperty:"mozVisibilityState",changeEvent:"mozvisibilitychange"},{hiddenProperty:"msHidden",stateProperty:"msVisibilityState",changeEvent:"msvisibilitychange"}].find(function(e){return e.hiddenProperty in document}))}catch(e){}return null}();return Object.freeze(Object.defineProperties({},{isHidden:{value:e},state:{value:t},hiddenProperty:{value:r.hiddenProperty},stateProperty:{value:r.stateProperty},changeEvent:{value:r.changeEvent}}))}(),_ref3=function(){function e(t){if("object"!==(void 0===t?"undefined":_typeof(t))||null===t)return t;if(t instanceof String)return String(t);if(t instanceof Number)return Number(t);if(t instanceof Boolean)return Boolean(t);if("function"==typeof t.clone)return t.clone(!0);if(t.nodeType&&"function"==typeof t.cloneNode)return t.cloneNode(!0);var r=void 0;return t instanceof Array?r=new Array(t.length):t instanceof Date?r=new Date(t.getTime()):t instanceof Map?(r=new Map,t.forEach(function(t,n){return r.set(n,e(t))})):t instanceof RegExp?r=new RegExp(t):t instanceof Set?(r=new Set,t.forEach(function(t){return r.add(e(t))})):r=Object.create(Object.getPrototypeOf(t)),Object.keys(t).forEach(function(n){return r[n]=e(t[n])}),r}function t(e){for(var t=document.createDocumentFragment(),r=document.createElement("p"),n=void 0;null!==(n=e.firstChild);){if(n.nodeType===Node.ELEMENT_NODE){switch(n.nodeName.toUpperCase()){case"BR":if(null!==n.nextSibling&&n.nextSibling.nodeType===Node.ELEMENT_NODE&&"BR"===n.nextSibling.nodeName.toUpperCase()){e.removeChild(n.nextSibling),e.removeChild(n),t.appendChild(r),r=document.createElement("p");continue}if(!r.hasChildNodes()){e.removeChild(n);continue}break;case"ADDRESS":case"ARTICLE":case"ASIDE":case"BLOCKQUOTE":case"CENTER":case"DIV":case"DL":case"FIGURE":case"FOOTER":case"FORM":case"H1":case"H2":case"H3":case"H4":case"H5":case"H6":case"HEADER":case"HR":case"MAIN":case"NAV":case"OL":case"P":case"PRE":case"SECTION":case"TABLE":case"UL":r.hasChildNodes()&&(t.appendChild(r),r=document.createElement("p")),t.appendChild(n);continue}}r.appendChild(n)}r.hasChildNodes()&&t.appendChild(r),e.appendChild(t)}function r(){try{return document.activeElement||null}catch(e){return null}}function n(e,t,r){var n="object"===(void 0===e?"undefined":_typeof(e))?e:document.getElementById(e);if(null==n)return null;var a=Array.isArray(t)?t:[t];jQuery(n).empty();for(var i=0,o=a.length;i<o;++i)if(Story.has(a[i]))return new Wikifier(n,Story.get(a[i]).processText().trim()),n;if(null!=r){var s=String(r).trim();""!==s&&new Wikifier(n,s)}return n}function a(e,t,r){var n=jQuery(document.createElement("div")),a=jQuery(document.createElement("button")),i=jQuery(document.createElement("pre")),o=L10n.get("errorTitle")+": "+(t||"unknown error");return a.addClass("error-toggle").ariaClick({label:L10n.get("errorToggle")},function(){a.hasClass("enabled")?(a.removeClass("enabled"),i.attr({"aria-hidden":!0,hidden:"hidden"})):(a.addClass("enabled"),i.removeAttr("aria-hidden hidden"))}).appendTo(n),jQuery(document.createElement("span")).addClass("error").text(o).appendTo(n),jQuery(document.createElement("code")).text(r).appendTo(i),i.addClass("error-source").attr({"aria-hidden":!0,hidden:"hidden"}).appendTo(n),n.addClass("error-view").appendTo(e),console.warn(o+"\n\t"+r.replace(/\n/g,"\n\t")),!1}function i(e,t){var r=i;switch(void 0===e?"undefined":_typeof(e)){case"number":if(Number.isNaN(e))return t;break;case"object":if(null===e)return t;if(Array.isArray(e))return e.map(function(e){return r(e,t)}).join(", ");if(e instanceof Set)return[].concat(_toConsumableArray(e)).map(function(e){return r(e,t)}).join(", ");if(e instanceof Map){return"{ "+[].concat(_toConsumableArray(e)).map(function(e){var n=_slicedToArray(e,2),a=n[0],i=n[1];return r(a,t)+" → "+r(i,t)}).join(", ")+" }"}return e instanceof Date?e.toLocaleString():"function"==typeof e.toString?e.toString():Object.prototype.toString.call(e);case"function":case"undefined":return t}return String(e)}return Object.freeze(Object.defineProperties({},{clone:{value:e},convertBreaks:{value:t},safeActiveElement:{value:r},setPageElement:{value:n},throwError:{value:a},toStringOrDefault:{value:i}}))
