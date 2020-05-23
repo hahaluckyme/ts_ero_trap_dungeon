@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="TS Ero Trap Dungeon" startnode="1" creator="Twine" creator-version="2.3.7" ifid="345F6C61-A571-48B9-90CD-340553E7631C" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage
+	<tw-storydata name="TS Ero Trap Dungeon" startnode="1" creator="Twine" creator-version="2.3.7" ifid="345F6C61-A571-48B9-90CD-340553E7631C" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage
 {
   font-size: 13px;
   line-height: 20px;
@@ -302,7 +302,11 @@ importScripts("https://www.googletagmanager.com/gtag/js?id=UA-160315117-1")
 	$(document).on('keyup', (ev) => {
     if (['1', '2', '3', '4', '5'].includes(ev.key)) {
       const key = ev.key - '1';
-			const tags = $('.passage').find(':contains(▷):not(:has(a))');
+			const tags = $('.passage').find(':contains(▷)').toArray().filter(e => {
+					return $(e).contents().filter(function(){ 
+						return this.nodeType == 3; 
+					}).toArray().map(e => e.nodeValue).join('').contains('▷');
+				});
       if (key < tags.length) {
         tags[key].click();
       }
