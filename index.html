@@ -3250,7 +3250,7 @@ You...
 [[052]]
 [[132]]
 [[004]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="153" name="004" tags="" position="715,8282" size="100,100">You peer down the tunnel in the wall opposite the underground lake.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="153" name="004" tags="" position="715,8280.333333333334" size="100,100">You peer down the tunnel in the wall opposite the underground lake.
 &quot;...Looks like it keeps going.&quot;
 The tunnel is so dark you can&#39;t see anything in it.
 
@@ -3258,15 +3258,12 @@ The tunnel is so dark you can&#39;t see anything in it.
 1. Take out a torch and use it.
 &lt;&lt;if $tracking==0 or $flag_i&gt;=1&gt;&gt;
 → &lt;&lt;link &quot;▷019&quot; &quot;019&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;else&gt;
+&lt;&lt;else&gt;&gt;
 → ▷019
 &lt;&lt;/if&gt;&gt;
 2. Don&#39;t use a torch. Or, you don&#39;t have one.
-&lt;&lt;if $tracking==0 or $flag_i&gt;=1&gt;&gt;
 → &lt;&lt;link &quot;▷091&quot; &quot;091&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;else&gt;&gt;
-→ [[▷091|091]]&lt;/b&gt;
-&lt;&lt;/if&gt;&gt;
+&lt;/b&gt;
 &lt;&lt;if $invisible==1&gt;&gt;
 [[019]]
 [[091]]
