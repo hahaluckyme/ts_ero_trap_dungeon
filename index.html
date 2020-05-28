@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="TS Ero Trap Dungeon" startnode="1" creator="Twine" creator-version="2.3.7" ifid="345F6C61-A571-48B9-90CD-340553E7631C" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage
+	<tw-storydata name="TS Ero Trap Dungeon" startnode="1" creator="Twine" creator-version="2.3.7" ifid="345F6C61-A571-48B9-90CD-340553E7631C" zoom="0.6" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage
 {
   font-size: 13px;
   line-height: 20px;
@@ -3194,7 +3194,7 @@ Your body stiffens up at the Magician&#39;s words. She steals a kiss from your l
 
 &lt;b&gt;(Check off the &lt;u&gt;sex toy&lt;/u&gt; status.)
 (&lt;u&gt;Degradation&lt;/u&gt; +5. Check off &lt;u&gt;flag J&lt;/u&gt;.)
-&lt;&lt;set $sex_toy=1, $degradation+=5, $flag_j+1&gt;&gt;
+&lt;&lt;set $sex_toy=1, $degradation+=5, $flag_j=1&gt;&gt;
 
 → [[▷112|112]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="151" name="112" tags="" position="861,8134" size="100,100">&quot;You remember that I&#39;ve got mixed blood, right? That I have both elf and demon blood in me.&quot;
 &quot;Y-Yeah...&quot;
@@ -3548,15 +3548,15 @@ You manage to step into the water without incident and begin walking toward the 
 
 &lt;b&gt;1. If you don&#39;t have &lt;u&gt;flag J&lt;/u&gt; checked off...
 &lt;&lt;if $tracking==0 or $flag_j==0&gt;&gt;
-→ [[▷028|028]]
-&lt;&lt;else&gt;&gt;
-→ ▷028
-&lt;&lt;/if&gt;&gt;
-2. If you have &lt;u&gt;flag J&lt;/u&gt; checked off...
-&lt;&lt;if $tracking==0 or $flag_j==1&gt;&gt;
 → [[▷098|098]]
 &lt;&lt;else&gt;&gt;
 → ▷098
+&lt;&lt;/if&gt;&gt;
+2. If you have &lt;u&gt;flag J&lt;/u&gt; checked off...
+&lt;&lt;if $tracking==0 or $flag_j==1&gt;&gt;
+→ [[▷028|028]]
+&lt;&lt;else&gt;&gt;
+→ ▷028
 &lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="174" name="028" tags="" position="220,8585" size="100,100">You&#39;ve been walking across the underground lake for a little bit now.
 Zap!
 &quot;Ahyihn!?&quot;
