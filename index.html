@@ -302,14 +302,16 @@ importScripts("https://www.googletagmanager.com/gtag/js?id=UA-160315117-1")
 	$(document).on('keyup', (ev) => {
     if (['1', '2', '3', '4', '5'].includes(ev.key)) {
       const key = ev.key - '1';
-			const tags = $('.passage').find(':contains(▷)').toArray().filter(e => {
-					return $(e).contents().filter(function(){ 
-						return this.nodeType == 3; 
-					}).toArray().map(e => e.nodeValue).join('').contains('▷');
-				});
-      if (key < tags.length) {
-        tags[key].click();
-      }
+			
+			const texts = $('.passage').html().match(/▷\d+/g);
+
+			const tags = [...new Set(texts)].map(e =>
+				$('.passage').find(`a:contains(${e})`)
+			);
+
+			if (key < tags.length) {
+				tags[key].click();
+			}
     } else if (ev.key === ',') {
       $('#history-backward').click();
     } else if (ev.key === '.') {
@@ -319,7 +321,7 @@ importScripts("https://www.googletagmanager.com/gtag/js?id=UA-160315117-1")
 			if (tags.length === 1) {
 				tags[0].click();
 			} else {
-				tags = $('.passage').find('a:contains(click here)');
+				tags = $('.passage').find('a:contains(click here), a:contains(Continue), a:contains(Afterword)');
 				if (tags.length > 0) {
 					tags[0].click();
 				}
@@ -614,7 +616,7 @@ Your mind wanders to your comrades...
 3. Think about the Knight.
 → [[▷013|013]]
 4. Pray for their safety and continue onward.
-→ [[▷162|162]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="18" name="179" tags="" position="12,2275" size="100,100">You remember the Priest.
+→ [[▷162|162]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="18" name="179" tags="" position="10,2275" size="100,100">You remember the Priest.
 You first met her in a church of the light spirits in a certain city. She was working there as the head priest.
 A demon had been posing as the city’s leader, and was threatening the large religious faction that followed the light spirits with his army.
 Luckily, you happened to visit the city at that time, and ran into the Priest as she was standing off against the army by herself in order to save the church from their raid. After witnessing her, cute and innocent in appearance but boldly and fearlessly standing up against the army, you fell for the Priest’s beauty at first sight.
@@ -920,7 +922,7 @@ The dark shadow that was cut down by the Demon Lord’s sword in your stead - it
 &quot;He... ro... You’re... our... last... hope...&quot;
 You listen to the Knight’s last words, just barely spoken after receiving a fatal wound from the Demon Lord, then you look at him, stunned speechless.
 
-&lt;b&gt;→ [[▷014|014]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="38" name="120" tags="" position="382,2869" size="100,100">After much thinking, you decide to offer up your virginity as demanded.
+&lt;b&gt;→ [[▷014|014]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="38" name="120" tags="" position="380,2869" size="100,100">After much thinking, you decide to offer up your virginity as demanded.
 Facing the nude statue of the Demon Lord, you squat down and gently your crotch, equipped with your new female genitals, toward it. And the moment your privates make the slightest contact...
 &quot;I think it moved just now... This is weird, I’m not doing this af... Huuh!?
 You decide to stop after the statue moves, but as soon as you pull your hips back, the statue swiftly moves, grabbing your hips and not letting go.
@@ -1536,7 +1538,7 @@ You choose a door and reach your hand out to it... You...
 [[116]]
 [[025]]
 [[082]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="145" tags="" position="465,3324" size="100,100">The girl who welcomed you is a scantily-clad succubus with small, black wings and a devil tail, but you&#39;ve seen her face before. More than that, in fact.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="145" tags="" position="465,3322" size="100,100">The girl who welcomed you is a scantily-clad succubus with small, black wings and a devil tail, but you&#39;ve seen her face before. More than that, in fact.
 &quot;Priest... Is that you?&quot;
 You call out to the succubus that resembles the Priest, and she smiles back at you with empty eyes.
 &quot;Ehehe, who did you &lt;i&gt;think&lt;/i&gt; I was? Of course it&#39;s the me you know. ♥&quot;
@@ -1566,7 +1568,7 @@ The Priest continues to talk to you as you keep climaxing and eventually pass ou
 
 &lt;b&gt;
 &lt;u&gt;Total climaxes&lt;/u&gt; +7. You &lt;u&gt;pass out&lt;/u&gt;. &lt;u&gt;Degradation&lt;/u&gt; + 3. Reset your &lt;u&gt;pleasure&lt;/u&gt;.)
-&lt;&lt;set $climax_damage=17, $degradation+3&gt;&gt;
+&lt;&lt;set $climax_damage=17, $degradation+=3&gt;&gt;
 &lt;&lt;takeClimaxDamage&gt;&gt;
 &lt;&lt;set $pleasure=0&gt;&gt;
 1. If you have a number next to your &lt;u&gt;lewd crest&lt;/u&gt; status...
@@ -1580,7 +1582,7 @@ The Priest continues to talk to you as you keep climaxing and eventually pass ou
 → [[▷024|024]]
 &lt;&lt;else&gt;&gt;
 → ▷024
-&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="59" name="015" tags="" position="585,3324" size="100,100">Two succubi welcome you into the room.
+&lt;&lt;/if&gt;&gt;&lt;/b&gt;</tw-passagedata><tw-passagedata pid="59" name="015" tags="" position="598,3322" size="100,100">Two succubi welcome you into the room.
 &quot;S-Succubi!? Why are there succubi here!?&quot;
 You draw your sword and prepare for battle, but the succubi simply smile at you and show no signs of hostility.
 &quot;Ehehe, we&#39;re here to help you change your clothes! ♥&quot;
@@ -3250,7 +3252,7 @@ You...
 [[052]]
 [[132]]
 [[004]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="153" name="004" tags="" position="715,8280.333333333334" size="100,100">You peer down the tunnel in the wall opposite the underground lake.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="153" name="004" tags="" position="715,8280" size="100,100">You peer down the tunnel in the wall opposite the underground lake.
 &quot;...Looks like it keeps going.&quot;
 The tunnel is so dark you can&#39;t see anything in it.
 
