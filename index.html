@@ -598,7 +598,7 @@ You blush red in response to the words that reflexively came out of your mouth.
 &lt;&lt;set $pleasure_damage=3&gt;&gt;
 &lt;&lt;takePleasureDamage&gt;&gt;
 	
-→ [[▷095|095]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="16" name="095" tags="" position="98.33333333333333,1975" size="100,100">You fix your disheveled clothes and sigh.
+→ [[▷095|095]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="16" name="095" tags="" position="98,1975" size="100,100">You fix your disheveled clothes and sigh.
 &quot;I didn’t intend to do this...&quot;
 You hold your head, tormented by guilt and regret after the fact.
 In the first place, you had no absolutely no intention of pleasuring yourself - you just wanted to check and see how you were doing.
@@ -1362,7 +1362,7 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
 &lt;&lt;set $fifth_floor_rest=0&gt;&gt;
 &lt;&lt;set $sixth_floor_magician=0&gt;&gt;
 &lt;&lt;set $sixth_floor_cure=0&gt;&gt;
-&lt;&lt;set $seventh_floor_statue=1&gt;&gt;
+&lt;&lt;set $seventh_floor_statue=0&gt;&gt;
 
 &lt;&lt;set $unlock_afterwordone=0&gt;&gt;
 &lt;&lt;set $unlock_afterwordtwo=0&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="Widgets" tags="widget" position="230,268" size="100,100">&lt;&lt;widget &quot;updateBar&quot;&gt;&gt;&lt;&lt;silently&gt;&gt;
@@ -4469,8 +4469,8 @@ You count the number of goblins then prepare to face them.
 &lt;&lt;else&gt;&gt;
 &amp;emsp;→ ▷B030
 &lt;&lt;/if&gt;&gt;
-&amp;emsp;▶ If the value of &lt;u&gt;flag O&lt;/u&gt; is set to 1...
-&lt;&lt;if $tracking==0 or ($flag_a==1 and $show_flag_o==1 and $flag_o==1)&gt;&gt;
+&amp;emsp;▶ If the value of &lt;u&gt;flag O&lt;/u&gt; is set to 1 or higher...
+&lt;&lt;if $tracking==0 or ($flag_a==1 and $show_flag_o==1 and $flag_o&gt;=1)&gt;&gt;
 &amp;emsp;→ [[▷B185|B185]]
 &lt;&lt;else&gt;&gt;
 &amp;emsp;→ ▷B185
@@ -5655,7 +5655,7 @@ A &lt;u&gt;lewd crest&lt;/u&gt; becomes visible on your abdomen and shines brigh
 (Add 7 to the value of &lt;u&gt;flag M&lt;/u&gt;, then erase &lt;u&gt;flag N&lt;/u&gt;.)
 
 → [[▷B181|B181]]&lt;/b&gt;
-&lt;&lt;set $lewd_crest+=1, $show_flag_o=1, $flag_o=1, $flag_m+=7, $flag_n=0&gt;&gt;</tw-passagedata><tw-passagedata pid="283" name="B078" tags="" position="1325,12257" size="100,100">The Priest picks you up and begins walking to the hospital.
+&lt;&lt;set $lewd_crest+=1, $show_flag_o=1, $flag_o=1, $flag_m+=7, $flag_n=0&gt;&gt;</tw-passagedata><tw-passagedata pid="283" name="B078" tags="" position="1320,12262" size="100,100">The Priest picks you up and begins walking to the hospital.
 On the way there, she grins alluringly and whispers in your ear.
 &quot;Ufufu, I&#39;ll treat you //real// nice next time, so you&#39;d better be ready, okay?&quot;
 &quot;Hyi, no! Let me go! Let me gooo!&quot;
@@ -5711,7 +5711,7 @@ You beg for freedom and the Priest responds with a smile.
 You look down and see an impressive shaft standing tall between the Priest&#39;s legs. You&#39;re not sure when it got there.
 &quot;So, Hero. Take my dick inside you and satisfy it, okay?&quot; the Priest says before circling around behind you, lifting you up, and pressing her member against your slit.
 
-&lt;b&gt;→ [[▷B122|B122]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="286" name="B096" tags="" position="1324,12407" size="100,100">&quot;Kyahn? What are you doing...?&quot;
+&lt;b&gt;→ [[▷B122|B122]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="286" name="B096" tags="" position="1317.3333333333333,12417" size="100,100">&quot;Kyahn? What are you doing...?&quot;
 After bringing you to the hospital, the Priest pushes you down onto a bed.
 &quot;Ufufu, did you think my dick would be satisfied with just that? Too bad! It hasn&#39;t had enough yet!&quot;
 The Priest graps your hips and pushes her member against your slit in the missionary position.
@@ -6452,6 +6452,8 @@ Those with slave collars have never once been allowed to flee from their service
 &lt;b&gt;(Check off the &lt;u&gt;non-virgin&lt;/u&gt; status.)
 (&lt;u&gt;Climaxes&lt;/u&gt; +37. You &lt;u&gt;pass out&lt;/u&gt;. &lt;u&gt;Degradation&lt;/u&gt; +18. Set the value of &lt;u&gt;flag M&lt;/u&gt; to 0.)
 
+&lt;&lt;set $non_virgin=1, $climax_damage=47, $degradation+=18, $flag_m=0&gt;&gt;
+
 1. If your &lt;u&gt;degradation&lt;/u&gt; is 90 or less...
 &lt;&lt;if $tracking==0 or $degradation&lt;=90&gt;&gt;
 → [[▷B148|B148]]
@@ -6464,7 +6466,6 @@ Those with slave collars have never once been allowed to flee from their service
 &lt;&lt;else&gt;&gt;
 → ▷B092
 &lt;&lt;/if&gt;&gt;&lt;/b&gt;
-&lt;&lt;set $non_virgin=1, $climax_damage=47, $degradation+=18, $flag_m=0&gt;&gt;
 </tw-passagedata><tw-passagedata pid="322" name="B148" tags="" position="1697,11830" size="100,100">You&#39;re currently in your debtor cage in the succubus bar, waiting for your next customer to come.
 &quot;I&#39;ve had enough of this... Let me out already...&quot; you beg the succubus guarding your cage. She replies with a sadistic grin.
 &quot;If you hate it that much, then you shouldn&#39;t have gotten in debt to begin with! You&#39;re at fault for this! So take responsibility and work off your debt! Get out there!&quot;
@@ -8506,7 +8507,7 @@ However, in the end, you&#39;re still turned on and find yourself unable to slee
 → ▷B011
 &lt;&lt;/if&gt;&gt;
 3. If the random number is something else...
-&lt;&lt;if $tracking==0 or ($random_number!=4 and $random_number!=7 and $random_number!=9&gt;&gt;
+&lt;&lt;if $tracking==0 or ($random_number!=4 and $random_number!=9)&gt;&gt;
 → [[▷B051|B051]]
 &lt;&lt;else&gt;&gt;
 → ▷B051
@@ -8596,7 +8597,7 @@ With the end of the labyrinth finally in suit, you climb up the stairs to the ne
 &quot;A keyhole... So that means that there&#39;s a key somewhere again, huh...&quot;
 You decide to investigate somewhere else in order to locate the key that opens this door.
 
-&lt;b&gt;→ [[▷B133|B133]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="464" name="B209" tags="" position="1781,19045" size="100,100">You try stabbing the wall with your sword, and its tip effortlessly gets sucked in.
+&lt;b&gt;→ [[▷B133|B133]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="464" name="B209" tags="" position="1779.3333333333333,19045" size="100,100">You try stabbing the wall with your sword, and its tip effortlessly gets sucked in.
 &quot;Just as I thought, there was a room concealed with illusion magic...&quot;
 You step into the previously hidden room.
 
