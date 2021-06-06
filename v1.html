@@ -5885,7 +5885,7 @@ You...
 &amp;emsp;→ ▷B090
 &lt;&lt;/if&gt;&gt;
 &amp;emsp;▶If &lt;u&gt;flag L&lt;/u&gt; is set...
-&lt;&lt;if $tracking==0 or $flag_l==1&gt;&gt;
+&lt;&lt;if $tracking==0 or $flag_l!=0&gt;&gt;
 &amp;emsp;→ &lt;&lt;link &quot;▷B178&quot; &quot;B178&quot;&gt;&gt;&lt;&lt;choiceCheck&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;&lt;else&gt;&gt;
 &amp;emsp;→ ▷B178
@@ -8797,7 +8797,7 @@ Your heart aches as you worry about the Knight. Though you can&#39;t be certain,
 You think about how you want to save your friend as you open the chest and take out a key with the &lt;u&gt;Demon Lord&#39;s Insignia&lt;/u&gt; carved into it. Then, you head for the door to the eighth floor.
 
 &lt;b&gt;(Check off &lt;u&gt;flag K&lt;/u&gt;. Erase &lt;u&gt;flag G&lt;/u&gt;.)
-(&lt;u&gt;Resistance&lt;/u&gt; -10. &lt;u&gt;Climaxes&lt;/u&gt; +1. You &lt;u&gt;pass out&lt;/u&gt;. &lt;u&gt;Pleasure&lt;/&gt; +5.)
+(&lt;u&gt;Resistance&lt;/u&gt; -10. &lt;u&gt;Climaxes&lt;/u&gt; +1. You &lt;u&gt;pass out&lt;/u&gt;. &lt;u&gt;Pleasure&lt;/u&gt; +5.)
 
 → [[▷B149|B149]]&lt;/b&gt;
 &lt;&lt;set $flag_k=1, $flag_g=0, $resistance-=10, $climax_damage=11, $pleasure=5&gt;&gt;&lt;&lt;takePleasureDamage&gt;&gt;&lt;&lt;takeClimaxDamage&gt;&gt;</tw-passagedata><tw-passagedata pid="475" name="C001" tags="" position="1701,19898" size="100,100">The climb the stairs, eventually reaching the top and stepping foot into the eighth floor.
@@ -9303,7 +9303,7 @@ The vampire girl suddenly pokes your abdomen with a syringe.
 Squirt... Fssssssh...
 The moment you&#39;re injected with the drug, you wet yourself.
 &quot;Pfh, haha, you&#39;re so cute, wetting yourself in front of me!&quot;
-&quot;T-T-T-This is &lt;i&gt;your&lt;/u&gt; fault!&quot;
+&quot;T-T-T-This is &lt;i&gt;your&lt;/i&gt; fault!&quot;
 You fret over your damp crotch as you glare at the vampire girl.
 &quot;This had to be done in order to make it easier for you to urinate. Otherwise, you can&#39;t let out your holy water on command, after all.&quot;
 &quot;You meant &lt;i&gt;that&lt;/i&gt; holy water!?&quot;
@@ -9584,8 +9584,8 @@ As you worry whether or not you&#39;ll be able to return to being a guy, you hea
 [[C164]]
 [[C012]]
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="516" name="C101" tags="" position="699,22700" size="100,100">You look over the whole room.
-There&#39;s only weapons and armor here - it appears this isn&#39;t where the &lt;i&gt;concentrated holy water&lt;/u&gt; machine is.
-&quot;I guess the &lt;i&gt;concentrated holy water&lt;/u&gt; machine&#39;s not here, huh...
+There&#39;s only weapons and armor here - it appears this isn&#39;t where the &lt;u&gt;concentrated holy water&lt;/u&gt; machine is.
+&quot;I guess the &lt;u&gt;concentrated holy water&lt;/u&gt; machine&#39;s not here, huh...
 The succubi described the machine as a torture device, and you don&#39;t see anything like that in here.
 
 &lt;b&gt;→ [[▷C142|C142]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="517" name="C028" tags="" position="852,22700" size="100,100">You look over the whole room.
@@ -9843,7 +9843,7 @@ The vampire girl looks a little sad. Judging from her expression, you don&#39;t 
 You chat with the vampire girl for a bit before thanking her and leaving lab #3.
 
 &lt;b&gt;→ [[▷C107|C107]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="535" name="C083" tags="" position="1812,22698" size="100,100">&quot;I just came to thank you.&quot;
-&quot;You? Thank &lt;i&gt;me&lt;/u&gt;?&quot;
+&quot;You? Thank &lt;i&gt;me&lt;/i&gt;?&quot;
 The vampire girl seems a bit confused.
 &quot;I managed to get some &lt;u&gt;concentrated holy water&lt;/u&gt; because of your help. So, thanks.&quot;
 You thank her, resulting in her blushing and lowering her head.
@@ -10041,7 +10041,7 @@ The room you&#39;re now in has nothing but a black steel tablet as its center an
 You stay on your guard as you approach the tablet.
 &quot;...It&#39;s not trapped?&quot;
 You expected some sort of perverted trap, but nothing happens when you touch the tablet. You look at its surface and see a single sentence engraved on it.
-『Who cares about what &lt;i&gt;you&lt;/u&gt; want?』
+『Who cares about what &lt;i&gt;you&lt;/i&gt; want?』
 You feel your rage building as you read the tablet.
 &quot;Damnit, Demon Lord! Ow!?&quot;
 You kicked the tablet in anger and twisted your ankle a little.
@@ -11489,7 +11489,7 @@ The Priest is smiling, but her eyes look empty and her expression ghastly.
 The Priest smiles and tilts her head, her expression clouded with a deep insanity.
 &quot;Hm? Why wouldn&#39;t I be? I wanted to offer my virginity to you, Hero. You protected me and thought of me as so precious. Yet, that brute took my first time. I... I&#39;m going to have his head for sure.&quot;
 You shudder and take a step back.
-&quot;You&#39;re going to defeat him too, right? I&#39;ll come with you, okay? I&#39;ll follow you &lt;i&gt;forever&lt;/u&gt;. ♥&quot;
+&quot;You&#39;re going to defeat him too, right? I&#39;ll come with you, okay? I&#39;ll follow you &lt;i&gt;forever&lt;/i&gt;. ♥&quot;
 The insane Priest possesses you.
 The two of you turn back and head further into the ninth floor.
 
@@ -11804,7 +11804,7 @@ Your other self suddenly grabs your hand and yanks you down to the floor.
 You forcefully smack their hand away and then feel a pain in your own hand, almost like it was hit.
 (Do we share sensations...?)
 You rub your hand and watch your double do the same.
-&quot;Yeah, we do. But it&#39;s only one-way. You feel what &lt;i&gt;I&lt;/u&gt; feel. Which means...
+&quot;Yeah, we do. But it&#39;s only one-way. You feel what &lt;i&gt;I&lt;/i&gt; feel. Which means...
 Your other self smiles, then runs her hands along her chest and pinches her nipples.
 &quot;Kya... Nnh!?&quot;
 You feel pain and pleasure run through your chest.
@@ -12020,7 +12020,7 @@ Wielding the magic of chaos and madness, you attack your friends.
 &quot;Sorry to keep you waiting. I&#39;m here to support you!&quot; exclaims the Priest.
 &quot;What are you talking about? You&#39;re the one who gave in to demonic forces and became a succubus.&quot;
 &quot;And you turned out to be a demon, did you not? Demons are the enemies of the Hero and I.&quot;
-&quot;Oh, so that&#39;s how it is... You&#39;ve &lt;i&gt;always&lt;/&gt; been pigheaded Priest. I kept it a secret because I didn&#39;t want to be discriminated against like that!&quot;
+&quot;Oh, so that&#39;s how it is... You&#39;ve &lt;i&gt;always&lt;/i&gt; been pigheaded Priest. I kept it a secret because I didn&#39;t want to be discriminated against like that!&quot;
 Sparks fly between the Magician and the Priest as they argue. The Knight just watches, looking troubled.
 &quot;Come on, stop fighting, you two. We&#39;re still in the Demon Lord&#39;s castle.&quot;
 You scold them, then discuss what to do next with the Knight.
@@ -12046,7 +12046,7 @@ The Magician and Knight run over to you, but behind them, the Priest...
 Your warning came too late. The Magician and Knight are sucked int oa black sphere and disappear as the Priest&#39;s magic binds you.
 &quot;What&#39;s the meaning of this, Priest!? What&#39;d you do to them!?&quot;
 You glare at the Priest as she approaches. She smiles and strokes your cheek.
-&quot;Actually, I&#39;ve stolen everything from the Demon Lord! It wouldn&#39;t be incorrect to say that I &lt;i&gt;am&lt;/u&gt; the Demon Lord now, in fact. Oh, and I teleported them somewhere else in the world using space manipulation magic, though I don&#39;t know where. Now they won&#39;t get in the way.&quot;
+&quot;Actually, I&#39;ve stolen everything from the Demon Lord! It wouldn&#39;t be incorrect to say that I &lt;i&gt;am&lt;/i&gt; the Demon Lord now, in fact. Oh, and I teleported them somewhere else in the world using space manipulation magic, though I don&#39;t know where. Now they won&#39;t get in the way.&quot;
 The Priest puts a finger to your forehead and uses brainwashing magic on you. You watch her smile as your control over your mind fades away. It appears that she&#39;s been taken over by madness.
 
 &lt;b&gt;→ [[▷C189|C189]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="675" name="C054" tags="" position="1452,28345" size="100,100">Your comrades run over to you.
@@ -12193,13 +12193,13 @@ You go through the mithril silver door with your comrades in tow.
 &lt;b&gt;→ [[▷C232|C232]]&lt;/b&gt;
 </tw-passagedata><tw-passagedata pid="687" name="C106" tags="Bad-End" position="976,28803" size="100,100">You&#39;re trapped in a room with a barrier set up to steal your powers as the Hero.
 This room is part of a manor prepared by the Magician and the succubus Priest, where they&#39;re keeping you as their pet, making sure you can&#39;t rebel against them.
-&quot;Oh &lt;i&gt;Hero&lt;/u&gt;, won&#39;t you come to be with me?&quot; the Magician playfully asks.
+&quot;Oh &lt;i&gt;Hero&lt;/i&gt;, won&#39;t you come to be with me?&quot; the Magician playfully asks.
 &quot;What are you talking about!? You slept with the Hero just last night!&quot;
-&quot;What are &lt;u&gt;you&lt;/u&gt; talking about!? You had her for two nights in a row before that!&quot;
+&quot;What are &lt;i&gt;you&lt;/i&gt; talking about!? You had her for two nights in a row before that!&quot;
 You sit down on the bed, wearing a thin negliee. You sigh as the Magician and Priest squabble.
 &quot;In this case, it&#39;d probably be better if I just slept with the Knight-&quot;
-&quot;&lt;u&gt;What did you say&lt;/u&gt;!? Have you been sleeping together with that meathead, Hero!?&quot;
-&quot;When!? When did you sleep with &lt;i&gt;him&lt;/u&gt;!? It&#39;s dick, right!? You wanted dick after all, didn&#39;t you!?&quot;
+&quot;&lt;i&gt;What did you say&lt;/i&gt;!? Have you been sleeping together with that meathead, Hero!?&quot;
+&quot;When!? When did you sleep with &lt;i&gt;him&lt;/i&gt;!? It&#39;s dick, right!? You wanted dick after all, didn&#39;t you!?&quot;
 The two corner you with questions.
 &quot;Fine, I&#39;ll just grow a dick with magic, then!&quot;
 &quot;Very well, let&#39;s pleasure both her holes tonight.&quot;
@@ -12603,7 +12603,7 @@ You kiss the Magician and pull her into bed then get to work having children.
 After defeating the Demon Lord and returning to your home country, you lived peacefully for a while before noticing that your belly was swelling up. You went to see a doctor, who said that you were three months pregnant. Having no knowledge of pregnancy, you hadn&#39;t realized.
 After using identification magic on the child in your womb, you find out that it&#39;s the Knight&#39;s.
 He was hesitant at first and suggested an abortion, but you thought about it hard and realized that you&#39;d wanted to birth his child all along, and refused.
-&quot;Isn&#39;t this a good thing? You wanted a cute girlfriend, but you really lucked out! Now you can have a cute &lt;i&gt;wife&lt;/u&gt;! Come on, take responsibility!&quot;
+&quot;Isn&#39;t this a good thing? You wanted a cute girlfriend, but you really lucked out! Now you can have a cute &lt;i&gt;wife&lt;/i&gt;! Come on, take responsibility!&quot;
 You joke about your situation while you&#39;re at the bar together. The next day, the Knight brings you a bunch of red roses and proposes.
 &quot;Let&#39;s become family, both you and the child in your belly! I&#39;ll make you happy for sure!&quot;
 Hit hard by the Knight&#39;s sincere feelings, you say yes to his proposal.
@@ -12657,7 +12657,7 @@ But really, I have very little time, so I&#39;ll keep my thanks brief.
 I&#39;d like to take this space to thank all of my debuggers, as well as the illustrator who drew such captivating art for me.
 Really, thank you so much!
 I&#39;m sorry for making you put up with my ridiculous work!
-I really, &lt;i&gt;really&lt;/u&gt; don&#39;t have any time, so I&#39;ll be taking my leave here. Let&#39;s meet again somewhere. Goodbye!
+I really, &lt;i&gt;really&lt;/i&gt; don&#39;t have any time, so I&#39;ll be taking my leave here. Let&#39;s meet again somewhere. Goodbye!
 
 </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
