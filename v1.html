@@ -1300,7 +1300,7 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
 &lt;br&gt;
 [[Calculation Quick Reference|■ Calculation Quick Reference]] 
 &lt;br&gt;
-[[Extra Content|■ Extra Content]] </tw-passagedata><tw-passagedata pid="47" name="StoryInit" tags="" position="233,93" size="100,100">&lt;&lt;set $tracking=1&gt;&gt;
+[[Extra Content|■ Extra Content]] </tw-passagedata><tw-passagedata pid="47" name="StoryInit" tags="" position="233,91" size="100,100">&lt;&lt;set $tracking=1&gt;&gt;
 &lt;&lt;set $climax_damage=0&gt;&gt;
 &lt;&lt;set $pleasure_damage=0&gt;&gt;
 
@@ -5263,13 +5263,13 @@ You firmly stare down the goblins holding you down, but they just smile as they 
 &lt;&lt;/if&gt;&gt;
 2. If you have the &lt;u&gt;non-virgin&lt;/u&gt; status checked off...
 &amp;emsp;▶ If you have the &lt;u&gt;in heat&lt;/u&gt; status checked off...
-&lt;&lt;if $tracking==0 or ($non_virgin==1 and $in_heat==0)&gt;&gt;
+&lt;&lt;if $tracking==0 or ($non_virgin==1 and $in_heat==1)&gt;&gt;
 &amp;emsp;→ [[▷B212|B212]]
 &lt;&lt;else&gt;&gt;
 &amp;emsp;→ ▷B212
 &lt;&lt;/if&gt;&gt;
 &amp;emsp;▶ If you don&#39;t have the &lt;u&gt;in heat&lt;/u&gt; status checked off...
-&lt;&lt;if $tracking==0 or ($non_virgin==1 and $in_heat==1)&gt;&gt;
+&lt;&lt;if $tracking==0 or ($non_virgin==1 and $in_heat==0)&gt;&gt;
 &amp;emsp;→ [[▷B108|B108]]
 &lt;&lt;else&gt;&gt;
 &amp;emsp;→ ▷B108
@@ -5511,7 +5511,7 @@ You drag your aching body out of the arena and back to the waiting room.
 (Add 5 to the value of &lt;u&gt;flag M&lt;/u&gt;, then erase &lt;u&gt;flag N&lt;/u&gt;.)
 
 → [[▷B253|B253]]&lt;/b&gt;
-&lt;&lt;set $climax_damage=1, $flag_M+=5, $flag_n=0, $flag_gamma+=1&gt;&gt;&lt;&lt;takeClimaxDamage&gt;&gt;&lt;&lt;set $pleasure=0&gt;&gt;</tw-passagedata><tw-passagedata pid="277" name="B019" tags="" position="1323,11810" size="100,100">『The Hero&#39;s opponent will be our newbie succubus!』
+&lt;&lt;set $climax_damage=1, $flag_q=1, $flag_m+=5, $flag_n=0, $flag_gamma+=1&gt;&gt;&lt;&lt;takeClimaxDamage&gt;&gt;&lt;&lt;set $pleasure=0&gt;&gt;</tw-passagedata><tw-passagedata pid="277" name="B019" tags="" position="1323,11810" size="100,100">『The Hero&#39;s opponent will be our newbie succubus!』
 &quot;Huh? Don&#39;t tell me...&quot;
 Your opponent that just entered the arena... It&#39;s the succubus Priest.
 &quot;Oh, so my opponent is the adorable Hero! ☆&quot;
