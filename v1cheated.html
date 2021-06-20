@@ -11223,13 +11223,13 @@ You had to press a switch to continue further, but after that, you continue down
 You open the door to the cell closest to you to see what&#39;s inside.
 
 &lt;b&gt;1. If the value of &lt;u&gt;flag α&lt;/u&gt; is 3 or higher and you don&#39;t have &lt;u&gt;flag S&lt;/u&gt; checked off...
-&lt;&lt;if $tracking==0 or ($flag_a&gt;=3 and $flag_s==0)&gt;&gt;
+&lt;&lt;if $tracking==0 or ($flag_alpha&gt;=3 and $flag_s==0)&gt;&gt;
 → [[▷C204|C204]]
 &lt;&lt;else&gt;&gt;
 → ▷C204
 &lt;&lt;/if&gt;&gt;
 2. If you don&#39;t meet the above conditions...
-&lt;&lt;if $tracking==0 or $flag_a&lt;=2 or $flag_s==1)&gt;&gt;
+&lt;&lt;if $tracking==0 or ($flag_alpha&lt;=2 or $flag_s==1)&gt;&gt;
 → [[▷C165|C165]]
 &lt;&lt;else&gt;&gt;
 → ▷C165
@@ -12366,7 +12366,7 @@ Through your struggle, you and your comrades have done quite a lot of damage to 
 → ▷C191
 &lt;&lt;/if&gt;&gt;
 2. If your &lt;u&gt;degradation&lt;/u&gt; is 100...
-&lt;&lt;if $tracking==0 or $degradation==100&gt;&gt;
+&lt;&lt;if $tracking==0 or $degradation&gt;=100&gt;&gt;
 → [[▷C119|C119]]
 &lt;&lt;else&gt;&gt;
 → ▷C119
