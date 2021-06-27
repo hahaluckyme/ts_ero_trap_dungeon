@@ -330,9 +330,14 @@ importScripts("https://www.googletagmanager.com/gtag/js?id=UA-160315117-1")
 
 Config.navigation.override = function (destPassage) {
 	var StoryVar = State.variables;
-	if (!StoryVar.zeroend && StoryVar.floor >= 5 && (StoryVar.resistance <= 0 || (StoryVar.degradation >= 100 && StoryVar.floor != 10))) {
-		StoryVar.zeroend = true;
-		return "B014";
+	if (!StoryVar.zeroend && (StoryVar.resistance <= 0 || StoryVar.degradation >= 100)) {
+		if (StoryVar.floor >= 5 && StoryVar.floor <= 7) {
+			StoryVar.zeroend = true;
+			return "B014";
+		} else if (StoryVar.floor >= 8 && StoryVar.floor <= 9) {
+  		StoryVar.zeroend = true;
+			return "C014";
+	  }
 	}
 	return destPassage;
 };
@@ -1300,7 +1305,7 @@ One year later, the goblins overpower the Demon Lord through their sheer numbers
 &lt;br&gt;
 [[Calculation Quick Reference|■ Calculation Quick Reference]] 
 &lt;br&gt;
-[[Extra Content|■ Extra Content]] </tw-passagedata><tw-passagedata pid="47" name="StoryInit" tags="" position="233,89.33333333333333" size="100,100">&lt;&lt;set $tracking=0&gt;&gt;
+[[Extra Content|■ Extra Content]] </tw-passagedata><tw-passagedata pid="47" name="StoryInit" tags="" position="233,89" size="100,100">&lt;&lt;set $tracking=0&gt;&gt;
 &lt;&lt;set $climax_damage=0&gt;&gt;
 &lt;&lt;set $pleasure_damage=0&gt;&gt;
 
@@ -8208,7 +8213,7 @@ But it seems that your preconception has done you wrong. Just when you&#39;re ab
 No, collapsing wouldn&#39;t be accurate. The path voluntarily opened a hole in itself.
 Not expecting this, you fall into the hole in the path.
 
-&lt;b&gt;→ [[▷B159|B159]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="436" name="B223" tags="" position="2006,17845" size="100,100">Having decided to use the magic transportation circle, you use your own magic to activate it.
+&lt;b&gt;→ [[▷B159|B159]]&lt;/b&gt;</tw-passagedata><tw-passagedata pid="436" name="B223" tags="" position="2007.6666666666667,17845" size="100,100">Having decided to use the magic transportation circle, you use your own magic to activate it.
 After being activated, the circle releases a blue light that fills your vision before making you feel like you&#39;re floating.
 
 &lt;b&gt;1. If you have &lt;u&gt;flag O&lt;/u&gt; checked off...
@@ -11035,7 +11040,7 @@ However, the reading is akin to smoldering cinders, making you concerned for him
 Even if he&#39;s still a Death Knight, you want to see him again.
 You tear up a bit as you think about the Knight, but you quickly wipe those tears away.
 
-&lt;b&gt;→ [[▷C239|C239]]&lt;?b&gt;</tw-passagedata><tw-passagedata pid="617" name="C203" tags="" position="1400.3333333333333,25041" size="100,100">You peek into the storehouse.
+&lt;b&gt;→ [[▷C239|C239]]&lt;?b&gt;</tw-passagedata><tw-passagedata pid="617" name="C203" tags="" position="1400,25041" size="100,100">You peek into the storehouse.
 It&#39;s packed full of haphazardly-stacked confiscated weapons and armor.
 
 &lt;b&gt;1. If you have &lt;u&gt;flag T&lt;/u&gt; checked off...
